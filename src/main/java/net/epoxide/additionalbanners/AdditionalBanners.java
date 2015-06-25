@@ -3,6 +3,7 @@ package net.epoxide.additionalbanners;
 import java.util.Arrays;
 
 import net.epoxide.additionalbanners.common.CommonProxy;
+import net.epoxide.additionalbanners.handler.BannerPatternHandler;
 import net.epoxide.additionalbanners.lib.Constants;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -22,6 +23,8 @@ public class AdditionalBanners {
     @EventHandler
     public void preInit (FMLPreInitializationEvent pre) {
     
+        setModInfo(pre.getModMetadata());
+        new BannerPatternHandler();
     }
     
     void setModInfo (ModMetadata meta) {

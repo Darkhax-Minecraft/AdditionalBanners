@@ -1,0 +1,449 @@
+#bread localization
+item.banner.additionalbanners_bread.black=Black Bread pattern
+item.banner.additionalbanners_bread.red=Red Bread pattern
+item.banner.additionalbanners_bread.green=Green Bread pattern
+item.banner.additionalbanners_bread.brown=Brown Bread pattern
+item.banner.additionalbanners_bread.blue=Blue Bread pattern
+item.banner.additionalbanners_bread.purple=Purple Bread pattern
+item.banner.additionalbanners_bread.cyan=Cyan Bread pattern
+item.banner.additionalbanners_bread.silver=Silver Bread pattern
+item.banner.additionalbanners_bread.gray=Gray Bread pattern
+item.banner.additionalbanners_bread.pink=Pink Bread pattern
+item.banner.additionalbanners_bread.lime=Lime Bread pattern
+item.banner.additionalbanners_bread.yellow=Yellow Bread pattern
+item.banner.additionalbanners_bread.lightBlue=LightBlue Bread pattern
+item.banner.additionalbanners_bread.magenta=Magenta Bread pattern
+item.banner.additionalbanners_bread.orange=Orange Bread pattern
+item.banner.additionalbanners_bread.white=White Bread pattern
+
+#fish localization
+item.banner.additionalbanners_fish.black=Black Fish pattern
+item.banner.additionalbanners_fish.red=Red Fish pattern
+item.banner.additionalbanners_fish.green=Green Fish pattern
+item.banner.additionalbanners_fish.brown=Brown Fish pattern
+item.banner.additionalbanners_fish.blue=Blue Fish pattern
+item.banner.additionalbanners_fish.purple=Purple Fish pattern
+item.banner.additionalbanners_fish.cyan=Cyan Fish pattern
+item.banner.additionalbanners_fish.silver=Silver Fish pattern
+item.banner.additionalbanners_fish.gray=Gray Fish pattern
+item.banner.additionalbanners_fish.pink=Pink Fish pattern
+item.banner.additionalbanners_fish.lime=Lime Fish pattern
+item.banner.additionalbanners_fish.yellow=Yellow Fish pattern
+item.banner.additionalbanners_fish.lightBlue=LightBlue Fish pattern
+item.banner.additionalbanners_fish.magenta=Magenta Fish pattern
+item.banner.additionalbanners_fish.orange=Orange Fish pattern
+item.banner.additionalbanners_fish.white=White Fish pattern
+
+#fishn localization
+item.banner.additionalbanners_fishn.black=Black Fishn pattern
+item.banner.additionalbanners_fishn.red=Red Fishn pattern
+item.banner.additionalbanners_fishn.green=Green Fishn pattern
+item.banner.additionalbanners_fishn.brown=Brown Fishn pattern
+item.banner.additionalbanners_fishn.blue=Blue Fishn pattern
+item.banner.additionalbanners_fishn.purple=Purple Fishn pattern
+item.banner.additionalbanners_fishn.cyan=Cyan Fishn pattern
+item.banner.additionalbanners_fishn.silver=Silver Fishn pattern
+item.banner.additionalbanners_fishn.gray=Gray Fishn pattern
+item.banner.additionalbanners_fishn.pink=Pink Fishn pattern
+item.banner.additionalbanners_fishn.lime=Lime Fishn pattern
+item.banner.additionalbanners_fishn.yellow=Yellow Fishn pattern
+item.banner.additionalbanners_fishn.lightBlue=LightBlue Fishn pattern
+item.banner.additionalbanners_fishn.magenta=Magenta Fishn pattern
+item.banner.additionalbanners_fishn.orange=Orange Fishn pattern
+item.banner.additionalbanners_fishn.white=White Fishn pattern
+
+#shield localization
+item.banner.additionalbanners_shield.black=Black Shield pattern
+item.banner.additionalbanners_shield.red=Red Shield pattern
+item.banner.additionalbanners_shield.green=Green Shield pattern
+item.banner.additionalbanners_shield.brown=Brown Shield pattern
+item.banner.additionalbanners_shield.blue=Blue Shield pattern
+item.banner.additionalbanners_shield.purple=Purple Shield pattern
+item.banner.additionalbanners_shield.cyan=Cyan Shield pattern
+item.banner.additionalbanners_shield.silver=Silver Shield pattern
+item.banner.additionalbanners_shield.gray=Gray Shield pattern
+item.banner.additionalbanners_shield.pink=Pink Shield pattern
+item.banner.additionalbanners_shield.lime=Lime Shield pattern
+item.banner.additionalbanners_shield.yellow=Yellow Shield pattern
+item.banner.additionalbanners_shield.lightBlue=LightBlue Shield pattern
+item.banner.additionalbanners_shield.magenta=Magenta Shield pattern
+item.banner.additionalbanners_shield.orange=Orange Shield pattern
+item.banner.additionalbanners_shield.white=White Shield pattern
+
+#pot localization
+item.banner.additionalbanners_pot.black=Black Pot pattern
+item.banner.additionalbanners_pot.red=Red Pot pattern
+item.banner.additionalbanners_pot.green=Green Pot pattern
+item.banner.additionalbanners_pot.brown=Brown Pot pattern
+item.banner.additionalbanners_pot.blue=Blue Pot pattern
+item.banner.additionalbanners_pot.purple=Purple Pot pattern
+item.banner.additionalbanners_pot.cyan=Cyan Pot pattern
+item.banner.additionalbanners_pot.silver=Silver Pot pattern
+item.banner.additionalbanners_pot.gray=Gray Pot pattern
+item.banner.additionalbanners_pot.pink=Pink Pot pattern
+item.banner.additionalbanners_pot.lime=Lime Pot pattern
+item.banner.additionalbanners_pot.yellow=Yellow Pot pattern
+item.banner.additionalbanners_pot.lightBlue=LightBlue Pot pattern
+item.banner.additionalbanners_pot.magenta=Magenta Pot pattern
+item.banner.additionalbanners_pot.orange=Orange Pot pattern
+item.banner.additionalbanners_pot.white=White Pot pattern
+
+#bed localization
+item.banner.additionalbanners_bed.black=Black Bed pattern
+item.banner.additionalbanners_bed.red=Red Bed pattern
+item.banner.additionalbanners_bed.green=Green Bed pattern
+item.banner.additionalbanners_bed.brown=Brown Bed pattern
+item.banner.additionalbanners_bed.blue=Blue Bed pattern
+item.banner.additionalbanners_bed.purple=Purple Bed pattern
+item.banner.additionalbanners_bed.cyan=Cyan Bed pattern
+item.banner.additionalbanners_bed.silver=Silver Bed pattern
+item.banner.additionalbanners_bed.gray=Gray Bed pattern
+item.banner.additionalbanners_bed.pink=Pink Bed pattern
+item.banner.additionalbanners_bed.lime=Lime Bed pattern
+item.banner.additionalbanners_bed.yellow=Yellow Bed pattern
+item.banner.additionalbanners_bed.lightBlue=LightBlue Bed pattern
+item.banner.additionalbanners_bed.magenta=Magenta Bed pattern
+item.banner.additionalbanners_bed.orange=Orange Bed pattern
+item.banner.additionalbanners_bed.white=White Bed pattern
+
+#book localization
+item.banner.additionalbanners_book.black=Black Book pattern
+item.banner.additionalbanners_book.red=Red Book pattern
+item.banner.additionalbanners_book.green=Green Book pattern
+item.banner.additionalbanners_book.brown=Brown Book pattern
+item.banner.additionalbanners_book.blue=Blue Book pattern
+item.banner.additionalbanners_book.purple=Purple Book pattern
+item.banner.additionalbanners_book.cyan=Cyan Book pattern
+item.banner.additionalbanners_book.silver=Silver Book pattern
+item.banner.additionalbanners_book.gray=Gray Book pattern
+item.banner.additionalbanners_book.pink=Pink Book pattern
+item.banner.additionalbanners_book.lime=Lime Book pattern
+item.banner.additionalbanners_book.yellow=Yellow Book pattern
+item.banner.additionalbanners_book.lightBlue=LightBlue Book pattern
+item.banner.additionalbanners_book.magenta=Magenta Book pattern
+item.banner.additionalbanners_book.orange=Orange Book pattern
+item.banner.additionalbanners_book.white=White Book pattern
+
+#bow localization
+item.banner.additionalbanners_bow.black=Black Bow pattern
+item.banner.additionalbanners_bow.red=Red Bow pattern
+item.banner.additionalbanners_bow.green=Green Bow pattern
+item.banner.additionalbanners_bow.brown=Brown Bow pattern
+item.banner.additionalbanners_bow.blue=Blue Bow pattern
+item.banner.additionalbanners_bow.purple=Purple Bow pattern
+item.banner.additionalbanners_bow.cyan=Cyan Bow pattern
+item.banner.additionalbanners_bow.silver=Silver Bow pattern
+item.banner.additionalbanners_bow.gray=Gray Bow pattern
+item.banner.additionalbanners_bow.pink=Pink Bow pattern
+item.banner.additionalbanners_bow.lime=Lime Bow pattern
+item.banner.additionalbanners_bow.yellow=Yellow Bow pattern
+item.banner.additionalbanners_bow.lightBlue=LightBlue Bow pattern
+item.banner.additionalbanners_bow.magenta=Magenta Bow pattern
+item.banner.additionalbanners_bow.orange=Orange Bow pattern
+item.banner.additionalbanners_bow.white=White Bow pattern
+
+#bucket localization
+item.banner.additionalbanners_bucket.black=Black Bucket pattern
+item.banner.additionalbanners_bucket.red=Red Bucket pattern
+item.banner.additionalbanners_bucket.green=Green Bucket pattern
+item.banner.additionalbanners_bucket.brown=Brown Bucket pattern
+item.banner.additionalbanners_bucket.blue=Blue Bucket pattern
+item.banner.additionalbanners_bucket.purple=Purple Bucket pattern
+item.banner.additionalbanners_bucket.cyan=Cyan Bucket pattern
+item.banner.additionalbanners_bucket.silver=Silver Bucket pattern
+item.banner.additionalbanners_bucket.gray=Gray Bucket pattern
+item.banner.additionalbanners_bucket.pink=Pink Bucket pattern
+item.banner.additionalbanners_bucket.lime=Lime Bucket pattern
+item.banner.additionalbanners_bucket.yellow=Yellow Bucket pattern
+item.banner.additionalbanners_bucket.lightBlue=LightBlue Bucket pattern
+item.banner.additionalbanners_bucket.magenta=Magenta Bucket pattern
+item.banner.additionalbanners_bucket.orange=Orange Bucket pattern
+item.banner.additionalbanners_bucket.white=White Bucket pattern
+
+#write localization
+item.banner.additionalbanners_write.black=Black Write pattern
+item.banner.additionalbanners_write.red=Red Write pattern
+item.banner.additionalbanners_write.green=Green Write pattern
+item.banner.additionalbanners_write.brown=Brown Write pattern
+item.banner.additionalbanners_write.blue=Blue Write pattern
+item.banner.additionalbanners_write.purple=Purple Write pattern
+item.banner.additionalbanners_write.cyan=Cyan Write pattern
+item.banner.additionalbanners_write.silver=Silver Write pattern
+item.banner.additionalbanners_write.gray=Gray Write pattern
+item.banner.additionalbanners_write.pink=Pink Write pattern
+item.banner.additionalbanners_write.lime=Lime Write pattern
+item.banner.additionalbanners_write.yellow=Yellow Write pattern
+item.banner.additionalbanners_write.lightBlue=LightBlue Write pattern
+item.banner.additionalbanners_write.magenta=Magenta Write pattern
+item.banner.additionalbanners_write.orange=Orange Write pattern
+item.banner.additionalbanners_write.white=White Write pattern
+
+#wheat localization
+item.banner.additionalbanners_wheat.black=Black Wheat pattern
+item.banner.additionalbanners_wheat.red=Red Wheat pattern
+item.banner.additionalbanners_wheat.green=Green Wheat pattern
+item.banner.additionalbanners_wheat.brown=Brown Wheat pattern
+item.banner.additionalbanners_wheat.blue=Blue Wheat pattern
+item.banner.additionalbanners_wheat.purple=Purple Wheat pattern
+item.banner.additionalbanners_wheat.cyan=Cyan Wheat pattern
+item.banner.additionalbanners_wheat.silver=Silver Wheat pattern
+item.banner.additionalbanners_wheat.gray=Gray Wheat pattern
+item.banner.additionalbanners_wheat.pink=Pink Wheat pattern
+item.banner.additionalbanners_wheat.lime=Lime Wheat pattern
+item.banner.additionalbanners_wheat.yellow=Yellow Wheat pattern
+item.banner.additionalbanners_wheat.lightBlue=LightBlue Wheat pattern
+item.banner.additionalbanners_wheat.magenta=Magenta Wheat pattern
+item.banner.additionalbanners_wheat.orange=Orange Wheat pattern
+item.banner.additionalbanners_wheat.white=White Wheat pattern
+
+#paper localization
+item.banner.additionalbanners_paper.black=Black Paper pattern
+item.banner.additionalbanners_paper.red=Red Paper pattern
+item.banner.additionalbanners_paper.green=Green Paper pattern
+item.banner.additionalbanners_paper.brown=Brown Paper pattern
+item.banner.additionalbanners_paper.blue=Blue Paper pattern
+item.banner.additionalbanners_paper.purple=Purple Paper pattern
+item.banner.additionalbanners_paper.cyan=Cyan Paper pattern
+item.banner.additionalbanners_paper.silver=Silver Paper pattern
+item.banner.additionalbanners_paper.gray=Gray Paper pattern
+item.banner.additionalbanners_paper.pink=Pink Paper pattern
+item.banner.additionalbanners_paper.lime=Lime Paper pattern
+item.banner.additionalbanners_paper.yellow=Yellow Paper pattern
+item.banner.additionalbanners_paper.lightBlue=LightBlue Paper pattern
+item.banner.additionalbanners_paper.magenta=Magenta Paper pattern
+item.banner.additionalbanners_paper.orange=Orange Paper pattern
+item.banner.additionalbanners_paper.white=White Paper pattern
+
+#shear localization
+item.banner.additionalbanners_shear.black=Black Shear pattern
+item.banner.additionalbanners_shear.red=Red Shear pattern
+item.banner.additionalbanners_shear.green=Green Shear pattern
+item.banner.additionalbanners_shear.brown=Brown Shear pattern
+item.banner.additionalbanners_shear.blue=Blue Shear pattern
+item.banner.additionalbanners_shear.purple=Purple Shear pattern
+item.banner.additionalbanners_shear.cyan=Cyan Shear pattern
+item.banner.additionalbanners_shear.silver=Silver Shear pattern
+item.banner.additionalbanners_shear.gray=Gray Shear pattern
+item.banner.additionalbanners_shear.pink=Pink Shear pattern
+item.banner.additionalbanners_shear.lime=Lime Shear pattern
+item.banner.additionalbanners_shear.yellow=Yellow Shear pattern
+item.banner.additionalbanners_shear.lightBlue=LightBlue Shear pattern
+item.banner.additionalbanners_shear.magenta=Magenta Shear pattern
+item.banner.additionalbanners_shear.orange=Orange Shear pattern
+item.banner.additionalbanners_shear.white=White Shear pattern
+
+#apple localization
+item.banner.additionalbanners_apple.black=Black Apple pattern
+item.banner.additionalbanners_apple.red=Red Apple pattern
+item.banner.additionalbanners_apple.green=Green Apple pattern
+item.banner.additionalbanners_apple.brown=Brown Apple pattern
+item.banner.additionalbanners_apple.blue=Blue Apple pattern
+item.banner.additionalbanners_apple.purple=Purple Apple pattern
+item.banner.additionalbanners_apple.cyan=Cyan Apple pattern
+item.banner.additionalbanners_apple.silver=Silver Apple pattern
+item.banner.additionalbanners_apple.gray=Gray Apple pattern
+item.banner.additionalbanners_apple.pink=Pink Apple pattern
+item.banner.additionalbanners_apple.lime=Lime Apple pattern
+item.banner.additionalbanners_apple.yellow=Yellow Apple pattern
+item.banner.additionalbanners_apple.lightBlue=LightBlue Apple pattern
+item.banner.additionalbanners_apple.magenta=Magenta Apple pattern
+item.banner.additionalbanners_apple.orange=Orange Apple pattern
+item.banner.additionalbanners_apple.white=White Apple pattern
+
+#egg localization
+item.banner.additionalbanners_egg.black=Black Egg pattern
+item.banner.additionalbanners_egg.red=Red Egg pattern
+item.banner.additionalbanners_egg.green=Green Egg pattern
+item.banner.additionalbanners_egg.brown=Brown Egg pattern
+item.banner.additionalbanners_egg.blue=Blue Egg pattern
+item.banner.additionalbanners_egg.purple=Purple Egg pattern
+item.banner.additionalbanners_egg.cyan=Cyan Egg pattern
+item.banner.additionalbanners_egg.silver=Silver Egg pattern
+item.banner.additionalbanners_egg.gray=Gray Egg pattern
+item.banner.additionalbanners_egg.pink=Pink Egg pattern
+item.banner.additionalbanners_egg.lime=Lime Egg pattern
+item.banner.additionalbanners_egg.yellow=Yellow Egg pattern
+item.banner.additionalbanners_egg.lightBlue=LightBlue Egg pattern
+item.banner.additionalbanners_egg.magenta=Magenta Egg pattern
+item.banner.additionalbanners_egg.orange=Orange Egg pattern
+item.banner.additionalbanners_egg.white=White Egg pattern
+
+#sword localization
+item.banner.additionalbanners_sword.black=Black Sword pattern
+item.banner.additionalbanners_sword.red=Red Sword pattern
+item.banner.additionalbanners_sword.green=Green Sword pattern
+item.banner.additionalbanners_sword.brown=Brown Sword pattern
+item.banner.additionalbanners_sword.blue=Blue Sword pattern
+item.banner.additionalbanners_sword.purple=Purple Sword pattern
+item.banner.additionalbanners_sword.cyan=Cyan Sword pattern
+item.banner.additionalbanners_sword.silver=Silver Sword pattern
+item.banner.additionalbanners_sword.gray=Gray Sword pattern
+item.banner.additionalbanners_sword.pink=Pink Sword pattern
+item.banner.additionalbanners_sword.lime=Lime Sword pattern
+item.banner.additionalbanners_sword.yellow=Yellow Sword pattern
+item.banner.additionalbanners_sword.lightBlue=LightBlue Sword pattern
+item.banner.additionalbanners_sword.magenta=Magenta Sword pattern
+item.banner.additionalbanners_sword.orange=Orange Sword pattern
+item.banner.additionalbanners_sword.white=White Sword pattern
+
+#axe localization
+item.banner.additionalbanners_axe.black=Black Axe pattern
+item.banner.additionalbanners_axe.red=Red Axe pattern
+item.banner.additionalbanners_axe.green=Green Axe pattern
+item.banner.additionalbanners_axe.brown=Brown Axe pattern
+item.banner.additionalbanners_axe.blue=Blue Axe pattern
+item.banner.additionalbanners_axe.purple=Purple Axe pattern
+item.banner.additionalbanners_axe.cyan=Cyan Axe pattern
+item.banner.additionalbanners_axe.silver=Silver Axe pattern
+item.banner.additionalbanners_axe.gray=Gray Axe pattern
+item.banner.additionalbanners_axe.pink=Pink Axe pattern
+item.banner.additionalbanners_axe.lime=Lime Axe pattern
+item.banner.additionalbanners_axe.yellow=Yellow Axe pattern
+item.banner.additionalbanners_axe.lightBlue=LightBlue Axe pattern
+item.banner.additionalbanners_axe.magenta=Magenta Axe pattern
+item.banner.additionalbanners_axe.orange=Orange Axe pattern
+item.banner.additionalbanners_axe.white=White Axe pattern
+
+#hoe localization
+item.banner.additionalbanners_hoe.black=Black Hoe pattern
+item.banner.additionalbanners_hoe.red=Red Hoe pattern
+item.banner.additionalbanners_hoe.green=Green Hoe pattern
+item.banner.additionalbanners_hoe.brown=Brown Hoe pattern
+item.banner.additionalbanners_hoe.blue=Blue Hoe pattern
+item.banner.additionalbanners_hoe.purple=Purple Hoe pattern
+item.banner.additionalbanners_hoe.cyan=Cyan Hoe pattern
+item.banner.additionalbanners_hoe.silver=Silver Hoe pattern
+item.banner.additionalbanners_hoe.gray=Gray Hoe pattern
+item.banner.additionalbanners_hoe.pink=Pink Hoe pattern
+item.banner.additionalbanners_hoe.lime=Lime Hoe pattern
+item.banner.additionalbanners_hoe.yellow=Yellow Hoe pattern
+item.banner.additionalbanners_hoe.lightBlue=LightBlue Hoe pattern
+item.banner.additionalbanners_hoe.magenta=Magenta Hoe pattern
+item.banner.additionalbanners_hoe.orange=Orange Hoe pattern
+item.banner.additionalbanners_hoe.white=White Hoe pattern
+
+#pick localization
+item.banner.additionalbanners_pick.black=Black Pick pattern
+item.banner.additionalbanners_pick.red=Red Pick pattern
+item.banner.additionalbanners_pick.green=Green Pick pattern
+item.banner.additionalbanners_pick.brown=Brown Pick pattern
+item.banner.additionalbanners_pick.blue=Blue Pick pattern
+item.banner.additionalbanners_pick.purple=Purple Pick pattern
+item.banner.additionalbanners_pick.cyan=Cyan Pick pattern
+item.banner.additionalbanners_pick.silver=Silver Pick pattern
+item.banner.additionalbanners_pick.gray=Gray Pick pattern
+item.banner.additionalbanners_pick.pink=Pink Pick pattern
+item.banner.additionalbanners_pick.lime=Lime Pick pattern
+item.banner.additionalbanners_pick.yellow=Yellow Pick pattern
+item.banner.additionalbanners_pick.lightBlue=LightBlue Pick pattern
+item.banner.additionalbanners_pick.magenta=Magenta Pick pattern
+item.banner.additionalbanners_pick.orange=Orange Pick pattern
+item.banner.additionalbanners_pick.white=White Pick pattern
+
+#shovel localization
+item.banner.additionalbanners_shovel.black=Black Shovel pattern
+item.banner.additionalbanners_shovel.red=Red Shovel pattern
+item.banner.additionalbanners_shovel.green=Green Shovel pattern
+item.banner.additionalbanners_shovel.brown=Brown Shovel pattern
+item.banner.additionalbanners_shovel.blue=Blue Shovel pattern
+item.banner.additionalbanners_shovel.purple=Purple Shovel pattern
+item.banner.additionalbanners_shovel.cyan=Cyan Shovel pattern
+item.banner.additionalbanners_shovel.silver=Silver Shovel pattern
+item.banner.additionalbanners_shovel.gray=Gray Shovel pattern
+item.banner.additionalbanners_shovel.pink=Pink Shovel pattern
+item.banner.additionalbanners_shovel.lime=Lime Shovel pattern
+item.banner.additionalbanners_shovel.yellow=Yellow Shovel pattern
+item.banner.additionalbanners_shovel.lightBlue=LightBlue Shovel pattern
+item.banner.additionalbanners_shovel.magenta=Magenta Shovel pattern
+item.banner.additionalbanners_shovel.orange=Orange Shovel pattern
+item.banner.additionalbanners_shovel.white=White Shovel pattern
+
+#boots localization
+item.banner.additionalbanners_boots.black=Black Boots pattern
+item.banner.additionalbanners_boots.red=Red Boots pattern
+item.banner.additionalbanners_boots.green=Green Boots pattern
+item.banner.additionalbanners_boots.brown=Brown Boots pattern
+item.banner.additionalbanners_boots.blue=Blue Boots pattern
+item.banner.additionalbanners_boots.purple=Purple Boots pattern
+item.banner.additionalbanners_boots.cyan=Cyan Boots pattern
+item.banner.additionalbanners_boots.silver=Silver Boots pattern
+item.banner.additionalbanners_boots.gray=Gray Boots pattern
+item.banner.additionalbanners_boots.pink=Pink Boots pattern
+item.banner.additionalbanners_boots.lime=Lime Boots pattern
+item.banner.additionalbanners_boots.yellow=Yellow Boots pattern
+item.banner.additionalbanners_boots.lightBlue=LightBlue Boots pattern
+item.banner.additionalbanners_boots.magenta=Magenta Boots pattern
+item.banner.additionalbanners_boots.orange=Orange Boots pattern
+item.banner.additionalbanners_boots.white=White Boots pattern
+
+#legs localization
+item.banner.additionalbanners_legs.black=Black Legs pattern
+item.banner.additionalbanners_legs.red=Red Legs pattern
+item.banner.additionalbanners_legs.green=Green Legs pattern
+item.banner.additionalbanners_legs.brown=Brown Legs pattern
+item.banner.additionalbanners_legs.blue=Blue Legs pattern
+item.banner.additionalbanners_legs.purple=Purple Legs pattern
+item.banner.additionalbanners_legs.cyan=Cyan Legs pattern
+item.banner.additionalbanners_legs.silver=Silver Legs pattern
+item.banner.additionalbanners_legs.gray=Gray Legs pattern
+item.banner.additionalbanners_legs.pink=Pink Legs pattern
+item.banner.additionalbanners_legs.lime=Lime Legs pattern
+item.banner.additionalbanners_legs.yellow=Yellow Legs pattern
+item.banner.additionalbanners_legs.lightBlue=LightBlue Legs pattern
+item.banner.additionalbanners_legs.magenta=Magenta Legs pattern
+item.banner.additionalbanners_legs.orange=Orange Legs pattern
+item.banner.additionalbanners_legs.white=White Legs pattern
+
+#chest localization
+item.banner.additionalbanners_chest.black=Black Chest pattern
+item.banner.additionalbanners_chest.red=Red Chest pattern
+item.banner.additionalbanners_chest.green=Green Chest pattern
+item.banner.additionalbanners_chest.brown=Brown Chest pattern
+item.banner.additionalbanners_chest.blue=Blue Chest pattern
+item.banner.additionalbanners_chest.purple=Purple Chest pattern
+item.banner.additionalbanners_chest.cyan=Cyan Chest pattern
+item.banner.additionalbanners_chest.silver=Silver Chest pattern
+item.banner.additionalbanners_chest.gray=Gray Chest pattern
+item.banner.additionalbanners_chest.pink=Pink Chest pattern
+item.banner.additionalbanners_chest.lime=Lime Chest pattern
+item.banner.additionalbanners_chest.yellow=Yellow Chest pattern
+item.banner.additionalbanners_chest.lightBlue=LightBlue Chest pattern
+item.banner.additionalbanners_chest.magenta=Magenta Chest pattern
+item.banner.additionalbanners_chest.orange=Orange Chest pattern
+item.banner.additionalbanners_chest.white=White Chest pattern
+
+#helm localization
+item.banner.additionalbanners_helm.black=Black Helm pattern
+item.banner.additionalbanners_helm.red=Red Helm pattern
+item.banner.additionalbanners_helm.green=Green Helm pattern
+item.banner.additionalbanners_helm.brown=Brown Helm pattern
+item.banner.additionalbanners_helm.blue=Blue Helm pattern
+item.banner.additionalbanners_helm.purple=Purple Helm pattern
+item.banner.additionalbanners_helm.cyan=Cyan Helm pattern
+item.banner.additionalbanners_helm.silver=Silver Helm pattern
+item.banner.additionalbanners_helm.gray=Gray Helm pattern
+item.banner.additionalbanners_helm.pink=Pink Helm pattern
+item.banner.additionalbanners_helm.lime=Lime Helm pattern
+item.banner.additionalbanners_helm.yellow=Yellow Helm pattern
+item.banner.additionalbanners_helm.lightBlue=LightBlue Helm pattern
+item.banner.additionalbanners_helm.magenta=Magenta Helm pattern
+item.banner.additionalbanners_helm.orange=Orange Helm pattern
+item.banner.additionalbanners_helm.white=White Helm pattern
+
+#horse localization
+item.banner.additionalbanners_horse.black=Black Horse pattern
+item.banner.additionalbanners_horse.red=Red Horse pattern
+item.banner.additionalbanners_horse.green=Green Horse pattern
+item.banner.additionalbanners_horse.brown=Brown Horse pattern
+item.banner.additionalbanners_horse.blue=Blue Horse pattern
+item.banner.additionalbanners_horse.purple=Purple Horse pattern
+item.banner.additionalbanners_horse.cyan=Cyan Horse pattern
+item.banner.additionalbanners_horse.silver=Silver Horse pattern
+item.banner.additionalbanners_horse.gray=Gray Horse pattern
+item.banner.additionalbanners_horse.pink=Pink Horse pattern
+item.banner.additionalbanners_horse.lime=Lime Horse pattern
+item.banner.additionalbanners_horse.yellow=Yellow Horse pattern
+item.banner.additionalbanners_horse.lightBlue=LightBlue Horse pattern
+item.banner.additionalbanners_horse.magenta=Magenta Horse pattern
+item.banner.additionalbanners_horse.orange=Orange Horse pattern
+item.banner.additionalbanners_horse.white=White Horse pattern
