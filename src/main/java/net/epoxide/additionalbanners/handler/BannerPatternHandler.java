@@ -1,6 +1,7 @@
 package net.epoxide.additionalbanners.handler;
 
 import net.epoxide.additionalbanners.lib.Constants;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityBanner.EnumBannerPattern;
@@ -8,8 +9,8 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class BannerPatternHandler {
     
-    public BannerPatternHandler() {
-    
+    public static void initCraftingBanners () {
+        
         addCraftingPattern("bread", new ItemStack(Items.bread));
         addCraftingPattern("fish", new ItemStack(Items.fish));
         addCraftingPattern("fishn", new ItemStack(Items.fishing_rod));
@@ -35,6 +36,12 @@ public class BannerPatternHandler {
         addCraftingPattern("chest", new ItemStack(Items.golden_chestplate));
         addCraftingPattern("helm", new ItemStack(Items.golden_helmet));
         addCraftingPattern("horse", new ItemStack(Items.golden_horse_armor));
+        addCraftingPattern("pumpkin", new ItemStack(Blocks.pumpkin));
+        addCraftingPattern("grass", new ItemStack(Blocks.grass));
+        addCraftingPattern("pillar", new ItemStack(Blocks.quartz_block, 1, 2));
+        addCraftingPattern("cobble", new ItemStack(Blocks.cobblestone));
+        addCraftingPattern("tag", new ItemStack(Items.name_tag));
+        addCraftingPattern("template", new ItemStack(Blocks.bedrock));
     }
     
     /**
@@ -52,7 +59,7 @@ public class BannerPatternHandler {
      *         created.
      */
     public static EnumBannerPattern addBasicPattern (String name, String id) {
-    
+        
         Class<?>[] paramTypes = { String.class, String.class };
         Object[] paramValues = { name, id };
         return EnumHelper.addEnum(EnumBannerPattern.class, name.toUpperCase(), paramTypes, paramValues);
@@ -69,7 +76,7 @@ public class BannerPatternHandler {
      * @param id : A small string used to represent the pattern without taking up much space.
      *            An example of this is "bri". Given how the system works, it is critical that
      *            this is a unique value. please consider adding the mod id to the pattern id.
-     * 
+     *            
      * @param craftingStack : An ItemStack which is used in the crafting recipe for this
      *            pattern. An example of this would be the creeper skull being used for the
      *            creeper pattern.
@@ -77,7 +84,7 @@ public class BannerPatternHandler {
      *         created.
      */
     public static EnumBannerPattern addCraftingPattern (String name, ItemStack craftingStack) {
-    
+        
         Class<?>[] paramTypes = { String.class, String.class, ItemStack.class };
         Object[] paramValues = { Constants.MOD_ID + "_" + name, Constants.MOD_ID + "." + name, craftingStack };
         return EnumHelper.addEnum(EnumBannerPattern.class, name.toUpperCase(), paramTypes, paramValues);
@@ -111,7 +118,7 @@ public class BannerPatternHandler {
      *         created.
      */
     public static EnumBannerPattern addDyePattern (String name, String id, String craftingTop, String craftingMid, String craftingBot) {
-    
+        
         Class<?>[] paramTypes = { String.class, String.class, String.class, String.class, String.class };
         Object[] paramValues = { name, id, craftingTop, craftingMid, craftingBot };
         return EnumHelper.addEnum(EnumBannerPattern.class, name.toUpperCase(), paramTypes, paramValues);
