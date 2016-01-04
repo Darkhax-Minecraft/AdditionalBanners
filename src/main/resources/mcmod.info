@@ -1,0 +1,15 @@
+[
+{
+  "modid": "additionalbanners",
+  "name": "Additional Banners",
+  "description": "Adds many new banner patterns into the game",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": ""http://minecraft.curseforge.com/projects/additional-banners-expand-your-options,
+  "updateUrl": "",
+  "authorList": ["Darkhax"],
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
