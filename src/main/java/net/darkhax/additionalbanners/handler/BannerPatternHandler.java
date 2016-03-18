@@ -1,6 +1,6 @@
-package net.epoxide.additionalbanners.handler;
+package net.darkhax.additionalbanners.handler;
 
-import net.epoxide.additionalbanners.lib.Constants;
+import net.darkhax.additionalbanners.lib.Constants;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;

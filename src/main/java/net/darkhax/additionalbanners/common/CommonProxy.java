@@ -1,4 +1,4 @@
-package net.epoxide.additionalbanners.common;
+package net.darkhax.additionalbanners.common;
 
 public class CommonProxy {
     

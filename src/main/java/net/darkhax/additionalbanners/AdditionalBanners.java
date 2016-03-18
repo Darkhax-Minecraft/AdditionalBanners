@@ -1,8 +1,8 @@
-package net.epoxide.additionalbanners;
+package net.darkhax.additionalbanners;
 
-import net.epoxide.additionalbanners.common.CommonProxy;
-import net.epoxide.additionalbanners.handler.BannerPatternHandler;
-import net.epoxide.additionalbanners.lib.Constants;
+import net.darkhax.additionalbanners.common.CommonProxy;
+import net.darkhax.additionalbanners.handler.BannerPatternHandler;
+import net.darkhax.additionalbanners.lib.Constants;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
