@@ -9,6 +9,9 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class BannerPatternHandler {
     
+    /**
+     * Initializes all of the new banner patterns added by the mod.
+     */
     public static void initCraftingBanners () {
         
         addCraftingPattern("bread", new ItemStack(Items.bread));
@@ -48,12 +51,12 @@ public class BannerPatternHandler {
      * Adds a new banner pattern to the game. This banner pattern will be hidden and will not
      * have a crafting recipe. An example of such is the base white pattern in vanilla.
      * 
-     * @param name : The name of the banner pattern. This is used for the texture file, and is
+     * @param name The name of the banner pattern. This is used for the texture file, and is
      *            also converted into upper case and used for the enum entry. Given how this
      *            system works, it's critical that this value is unique, consider adding the
      *            mod id to the name.
-     * @param id : A small string used to represent the pattern without taking up much space.
-     *            An example of this is "bri". Given how the system works, it is critical that
+     * @param id A small string used to represent the pattern without taking up much space. An
+     *            example of this is "bri". Given how the system works, it is critical that
      *            this is a unique value. please consider adding the mod id to the pattern id.
      * @return EnumBannerPattern: A reference to the new EnumBannerPattern entry that has been
      *         created.
@@ -69,17 +72,17 @@ public class BannerPatternHandler {
      * Adds a new banner pattern to the game. This banner pattern will be applied by using the
      * provided item in a crafting recipe with the banner.
      * 
-     * @param name : The name of the banner pattern. This is used for the texture file, and is
+     * @param name The name of the banner pattern. This is used for the texture file, and is
      *            also converted into upper case and used for the enum entry. Given how this
      *            system works, it's critical that this value is unique, consider adding the
      *            mod id to the name.
-     * @param id : A small string used to represent the pattern without taking up much space.
-     *            An example of this is "bri". Given how the system works, it is critical that
+     * @param id A small string used to represent the pattern without taking up much space. An
+     *            example of this is "bri". Given how the system works, it is critical that
      *            this is a unique value. please consider adding the mod id to the pattern id.
      *            
-     * @param craftingStack : An ItemStack which is used in the crafting recipe for this
-     *            pattern. An example of this would be the creeper skull being used for the
-     *            creeper pattern.
+     * @param craftingStack An ItemStack which is used in the crafting recipe for this pattern.
+     *            An example of this would be the creeper skull being used for the creeper
+     *            pattern.
      * @return EnumBannerPattern: A reference to the new EnumBannerPattern entry that has been
      *         created.
      */
@@ -95,25 +98,25 @@ public class BannerPatternHandler {
      * dyes in a specific configuration. Keep in mind that this pattern only accepts dyes, and
      * recipes can conflict. This means this option is limited to 2^9 (512) possibilities.
      * 
-     * @param name : The name of the banner pattern. This is used for the texture file, and is
+     * @param name The name of the banner pattern. This is used for the texture file, and is
      *            also converted into upper case and used for the enum entry. Given how this
      *            system works, it's critical that this value is unique, consider adding the
      *            mod id to the name.
-     * @param id : A small string used to represent the pattern without taking up much space.
-     *            An example of this is "bri". Given how the system works, it is critical that
+     * @param id A small string used to represent the pattern without taking up much space. An
+     *            example of this is "bri". Given how the system works, it is critical that
      *            this is a unique value. please consider adding the mod id to the pattern id.
-     * @param craftingTop : A layout for the pattern in the top row of the crafting grid. This
-     *            is represented by a string with three characters. A blank space means nothing
+     * @param craftingTop A layout for the pattern in the top row of the crafting grid. This is
+     *            represented by a string with three characters. A blank space means nothing
      *            goes in that slot, while a # means that a dye would go in that slot. Example:
      *            "# #"
-     * @param craftingMid : A layout for the pattern in the middle row of the crafting grid.
-     *            This is represented by a string with three characters. A blank space means
-     *            nothing goes in that slot, while a # means that a dye would go in that slot.
-     *            Example: " # "
-     * @param craftingBot : A layout for the pattern in the bottom row of the crafting grid.
-     *            This is represented by a string with three characters. A blank space means
-     *            nothing goes in that slot, while a # means that a dye would go in that slot.
-     *            Example: "###"
+     * @param craftingMid A layout for the pattern in the middle row of the crafting grid. This
+     *            is represented by a string with three characters. A blank space means nothing
+     *            goes in that slot, while a # means that a dye would go in that slot. Example:
+     *            " # "
+     * @param craftingBot A layout for the pattern in the bottom row of the crafting grid. This
+     *            is represented by a string with three characters. A blank space means nothing
+     *            goes in that slot, while a # means that a dye would go in that slot. Example:
+     *            "###"
      * @return EnumBannerPattern: A reference to the new EnumBannerPattern entry that has been
      *         created.
      */
