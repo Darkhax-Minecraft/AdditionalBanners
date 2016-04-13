@@ -34,9 +34,9 @@ version = getVersionFromJava(file("src/main/java/net/darkhax/additionalbanners/l
 //Defines the MC environment information.
 minecraft {
 
-    version = "1.9-12.16.0.1767-1.9"
+    version = "1.9-12.16.0.1863-1.9"
     runDir = "run"
-    mappings = "snapshot_20160312"
+    mappings = 'snapshot_20160412'
 }
 
 //Defines basic patterns for pulling various dependencies.
