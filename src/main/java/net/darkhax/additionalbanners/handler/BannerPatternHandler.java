@@ -14,37 +14,37 @@ public class BannerPatternHandler {
      */
     public static void initCraftingBanners () {
         
-        addCraftingPattern("bread", new ItemStack(Items.bread));
-        addCraftingPattern("fish", new ItemStack(Items.fish));
-        addCraftingPattern("fishn", new ItemStack(Items.fishing_rod));
-        addCraftingPattern("shield", new ItemStack(Items.oak_door));
-        addCraftingPattern("pot", new ItemStack(Items.potionitem));
-        addCraftingPattern("bed", new ItemStack(Items.bed));
-        addCraftingPattern("book", new ItemStack(Items.book));
-        addCraftingPattern("bow", new ItemStack(Items.bow));
-        addCraftingPattern("bucket", new ItemStack(Items.bucket));
-        addCraftingPattern("write", new ItemStack(Items.writable_book));
-        addCraftingPattern("wheat", new ItemStack(Items.wheat));
-        addCraftingPattern("paper", new ItemStack(Items.paper));
-        addCraftingPattern("shear", new ItemStack(Items.shears));
-        addCraftingPattern("apple", new ItemStack(Items.apple));
-        addCraftingPattern("egg", new ItemStack(Items.egg));
-        addCraftingPattern("sword", new ItemStack(Items.golden_sword));
-        addCraftingPattern("axe", new ItemStack(Items.golden_axe));
-        addCraftingPattern("hoe", new ItemStack(Items.golden_hoe));
-        addCraftingPattern("pick", new ItemStack(Items.golden_pickaxe));
-        addCraftingPattern("shovel", new ItemStack(Items.golden_shovel));
-        addCraftingPattern("boots", new ItemStack(Items.golden_boots));
-        addCraftingPattern("legs", new ItemStack(Items.golden_leggings));
-        addCraftingPattern("chest", new ItemStack(Items.golden_chestplate));
-        addCraftingPattern("helm", new ItemStack(Items.golden_helmet));
-        addCraftingPattern("horse", new ItemStack(Items.golden_horse_armor));
-        addCraftingPattern("pumpkin", new ItemStack(Blocks.pumpkin));
-        addCraftingPattern("grass", new ItemStack(Blocks.grass));
-        addCraftingPattern("pillar", new ItemStack(Blocks.quartz_block, 1, 2));
-        addCraftingPattern("cobble", new ItemStack(Blocks.cobblestone));
-        addCraftingPattern("tag", new ItemStack(Items.name_tag));
-        addCraftingPattern("template", new ItemStack(Blocks.bedrock));
+        addCraftingPattern("bread", new ItemStack(Items.BREAD));
+        addCraftingPattern("fish", new ItemStack(Items.FISH));
+        addCraftingPattern("fishn", new ItemStack(Items.FISHING_ROD));
+        addCraftingPattern("shield", new ItemStack(Items.OAK_DOOR));
+        addCraftingPattern("pot", new ItemStack(Items.POTIONITEM));
+        addCraftingPattern("bed", new ItemStack(Items.BED));
+        addCraftingPattern("book", new ItemStack(Items.BOOK));
+        addCraftingPattern("bow", new ItemStack(Items.BOW));
+        addCraftingPattern("bucket", new ItemStack(Items.BUCKET));
+        addCraftingPattern("write", new ItemStack(Items.WRITABLE_BOOK));
+        addCraftingPattern("wheat", new ItemStack(Items.WHEAT));
+        addCraftingPattern("paper", new ItemStack(Items.PAPER));
+        addCraftingPattern("shear", new ItemStack(Items.SHEARS));
+        addCraftingPattern("apple", new ItemStack(Items.APPLE));
+        addCraftingPattern("egg", new ItemStack(Items.EGG));
+        addCraftingPattern("sword", new ItemStack(Items.GOLDEN_SWORD));
+        addCraftingPattern("axe", new ItemStack(Items.GOLDEN_AXE));
+        addCraftingPattern("hoe", new ItemStack(Items.GOLDEN_HOE));
+        addCraftingPattern("pick", new ItemStack(Items.GOLDEN_PICKAXE));
+        addCraftingPattern("shovel", new ItemStack(Items.GOLDEN_SHOVEL));
+        addCraftingPattern("boots", new ItemStack(Items.GOLDEN_BOOTS));
+        addCraftingPattern("legs", new ItemStack(Items.GOLDEN_LEGGINGS));
+        addCraftingPattern("chest", new ItemStack(Items.GOLDEN_CHESTPLATE));
+        addCraftingPattern("helm", new ItemStack(Items.GOLDEN_HELMET));
+        addCraftingPattern("horse", new ItemStack(Items.GOLDEN_HORSE_ARMOR));
+        addCraftingPattern("pumpkin", new ItemStack(Blocks.PUMPKIN));
+        addCraftingPattern("grass", new ItemStack(Blocks.GRASS));
+        addCraftingPattern("pillar", new ItemStack(Blocks.QUARTZ_BLOCK, 1, 2));
+        addCraftingPattern("cobble", new ItemStack(Blocks.COBBLESTONE));
+        addCraftingPattern("tag", new ItemStack(Items.NAME_TAG));
+        addCraftingPattern("template", new ItemStack(Blocks.BEDROCK));
     }
     
     /**
