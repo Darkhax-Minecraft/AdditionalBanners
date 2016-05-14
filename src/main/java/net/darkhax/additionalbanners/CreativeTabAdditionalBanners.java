@@ -15,6 +15,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class CreativeTabAdditionalBanners extends CreativeTabs {
     
+    private static ItemStack DISPLAY = null;
+    
     public CreativeTabAdditionalBanners() {
         
         super("additionalbanners");
@@ -42,9 +44,19 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
         for (final EnumDyeColor color : EnumDyeColor.values())
             for (final BannerUtils.TypeDesign design : BannerUtils.TypeDesign.values()) {
                 
+                System.out.println(color.name() + " - " + design.name());
                 final ItemStack stack = BannerUtils.createBanner(color, BannerUtils.createPatternList(color, design.getLayers()));
                 stack.setStackDisplayName(ChatFormatting.RESET + "Design: " + design.name().toLowerCase());
                 itemList.add(stack);
             }
+    }
+    
+    @SideOnly(Side.CLIENT)
+    public ItemStack getIconItemStack() {
+        
+        if (DISPLAY == null) 
+            DISPLAY = BannerUtils.createBanner(EnumDyeColor.WHITE, BannerUtils.createPatternList(BannerUtils.TypeDesign.ADD.getLayers()));
+        
+        return DISPLAY;
     }
 }
