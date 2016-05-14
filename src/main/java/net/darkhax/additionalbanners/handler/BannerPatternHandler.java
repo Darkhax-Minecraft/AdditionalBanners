@@ -3,11 +3,15 @@ package net.darkhax.additionalbanners.handler;
 import net.darkhax.additionalbanners.lib.Constants;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityBanner.EnumBannerPattern;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class BannerPatternHandler {
+    
+    public static EnumBannerPattern HASHTAG;
+    public static EnumBannerPattern CAP;
     
     /**
      * Initializes all of the new banner patterns added by the mod.
@@ -45,6 +49,12 @@ public class BannerPatternHandler {
         addCraftingPattern("cobble", new ItemStack(Blocks.COBBLESTONE));
         addCraftingPattern("tag", new ItemStack(Items.NAME_TAG));
         addCraftingPattern("template", new ItemStack(Blocks.BEDROCK));
+        addCraftingPattern("dragon", new ItemStack(Items.DRAGON_BREATH));
+        addCraftingPattern("squid", new ItemStack(Items.PRISMARINE_SHARD));
+        addCraftingPattern("planks", new ItemStack(Blocks.PLANKS));
+        
+        HASHTAG = addBasicPattern("hashtag");
+        CAP = addCraftingPattern("cap", new ItemStack(Item.getItemFromBlock(Blocks.STONE_SLAB)));
     }
     
     /**
@@ -61,10 +71,10 @@ public class BannerPatternHandler {
      * @return EnumBannerPattern: A reference to the new EnumBannerPattern entry that has been
      *         created.
      */
-    public static EnumBannerPattern addBasicPattern (String name, String id) {
+    public static EnumBannerPattern addBasicPattern (String name) {
         
-        Class<?>[] paramTypes = { String.class, String.class };
-        Object[] paramValues = { name, id };
+        final Class<?>[] paramTypes = { String.class, String.class };
+        final Object[] paramValues = { Constants.MOD_ID + "_" + name, Constants.MOD_ID + "." + name };
         return EnumHelper.addEnum(EnumBannerPattern.class, name.toUpperCase(), paramTypes, paramValues);
     }
     
@@ -88,8 +98,8 @@ public class BannerPatternHandler {
      */
     public static EnumBannerPattern addCraftingPattern (String name, ItemStack craftingStack) {
         
-        Class<?>[] paramTypes = { String.class, String.class, ItemStack.class };
-        Object[] paramValues = { Constants.MOD_ID + "_" + name, Constants.MOD_ID + "." + name, craftingStack };
+        final Class<?>[] paramTypes = { String.class, String.class, ItemStack.class };
+        final Object[] paramValues = { Constants.MOD_ID + "_" + name, Constants.MOD_ID + "." + name, craftingStack };
         return EnumHelper.addEnum(EnumBannerPattern.class, name.toUpperCase(), paramTypes, paramValues);
     }
     
@@ -122,8 +132,8 @@ public class BannerPatternHandler {
      */
     public static EnumBannerPattern addDyePattern (String name, String id, String craftingTop, String craftingMid, String craftingBot) {
         
-        Class<?>[] paramTypes = { String.class, String.class, String.class, String.class, String.class };
-        Object[] paramValues = { name, id, craftingTop, craftingMid, craftingBot };
+        final Class<?>[] paramTypes = { String.class, String.class, String.class, String.class, String.class };
+        final Object[] paramValues = { name, id, craftingTop, craftingMid, craftingBot };
         return EnumHelper.addEnum(EnumBannerPattern.class, name.toUpperCase(), paramTypes, paramValues);
     }
 }
