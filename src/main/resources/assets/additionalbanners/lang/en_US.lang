@@ -1,3 +1,6 @@
+#Misc
+itemGroup.additionalbanners=Add. Banners
+
 #bread localization
 item.banner.additionalbanners_bread.black=Black Bread Pattern
 item.banner.additionalbanners_bread.red=Red Bread Pattern
@@ -537,3 +540,21 @@ item.banner.additionalbanners_tag.lightBlue=LightBlue Tag Pattern
 item.banner.additionalbanners_tag.magenta=Magenta Tag Pattern
 item.banner.additionalbanners_tag.orange=Orange Tag Pattern
 item.banner.additionalbanners_tag.white=White Tag Pattern
+
+#dragon localization
+item.banner.additionalbanners_dragon.black=Black Dragon Pattern
+item.banner.additionalbanners_dragon.red=Red Dragon Pattern
+item.banner.additionalbanners_dragon.green=Green Dragon Pattern
+item.banner.additionalbanners_dragon.brown=Brown Dragon Pattern
+item.banner.additionalbanners_dragon.blue=Blue Dragon Pattern
+item.banner.additionalbanners_dragon.purple=Purple Dragon Pattern
+item.banner.additionalbanners_dragon.cyan=Cyan Dragon Pattern
+item.banner.additionalbanners_dragon.silver=Silver Dragon Pattern
+item.banner.additionalbanners_dragon.gray=Gray Dragon Pattern
+item.banner.additionalbanners_dragon.pink=Pink Dragon Pattern
+item.banner.additionalbanners_dragon.lime=Lime Dragon Pattern
+item.banner.additionalbanners_dragon.yellow=Yellow Dragon Pattern
+item.banner.additionalbanners_dragon.lightBlue=LightBlue Dragon Pattern
+item.banner.additionalbanners_dragon.magenta=Magenta Dragon Pattern
+item.banner.additionalbanners_dragon.orange=Orange Dragon Pattern
+item.banner.additionalbanners_dragon.white=White Dragon Pattern

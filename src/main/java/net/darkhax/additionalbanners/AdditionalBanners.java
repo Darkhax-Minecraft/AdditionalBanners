@@ -3,6 +3,7 @@ package net.darkhax.additionalbanners;
 import net.darkhax.additionalbanners.common.CommonProxy;
 import net.darkhax.additionalbanners.handler.BannerPatternHandler;
 import net.darkhax.additionalbanners.lib.Constants;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -16,6 +17,8 @@ public class AdditionalBanners {
     
     @Mod.Instance(Constants.MOD_ID)
     public static AdditionalBanners instance;
+    
+    public static final CreativeTabs TAB_ADDITONAL_BANNERS = new CreativeTabAdditionalBanners();
     
     @EventHandler
     public void preInit (FMLPreInitializationEvent pre) {
