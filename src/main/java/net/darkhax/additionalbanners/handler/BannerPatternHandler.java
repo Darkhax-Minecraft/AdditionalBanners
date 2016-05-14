@@ -48,7 +48,6 @@ public class BannerPatternHandler {
         addCraftingPattern("pillar", new ItemStack(Blocks.QUARTZ_BLOCK, 1, 2));
         addCraftingPattern("cobble", new ItemStack(Blocks.COBBLESTONE));
         addCraftingPattern("tag", new ItemStack(Items.NAME_TAG));
-        addCraftingPattern("template", new ItemStack(Blocks.BEDROCK));
         addCraftingPattern("dragon", new ItemStack(Items.DRAGON_BREATH));
         addCraftingPattern("squid", new ItemStack(Items.PRISMARINE_SHARD));
         addCraftingPattern("planks", new ItemStack(Blocks.PLANKS));

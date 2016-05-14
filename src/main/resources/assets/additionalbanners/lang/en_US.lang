@@ -558,3 +558,75 @@ item.banner.additionalbanners_dragon.lightBlue=LightBlue Dragon Pattern
 item.banner.additionalbanners_dragon.magenta=Magenta Dragon Pattern
 item.banner.additionalbanners_dragon.orange=Orange Dragon Pattern
 item.banner.additionalbanners_dragon.white=White Dragon Pattern
+
+#squid localization
+item.banner.additionalbanners_squid.black=Black Squid Pattern
+item.banner.additionalbanners_squid.red=Red Squid Pattern
+item.banner.additionalbanners_squid.green=Green Squid Pattern
+item.banner.additionalbanners_squid.brown=Brown Squid Pattern
+item.banner.additionalbanners_squid.blue=Blue Squid Pattern
+item.banner.additionalbanners_squid.purple=Purple Squid Pattern
+item.banner.additionalbanners_squid.cyan=Cyan Squid Pattern
+item.banner.additionalbanners_squid.silver=Silver Squid Pattern
+item.banner.additionalbanners_squid.gray=Gray Squid Pattern
+item.banner.additionalbanners_squid.pink=Pink Squid Pattern
+item.banner.additionalbanners_squid.lime=Lime Squid Pattern
+item.banner.additionalbanners_squid.yellow=Yellow Squid Pattern
+item.banner.additionalbanners_squid.lightBlue=LightBlue Squid Pattern
+item.banner.additionalbanners_squid.magenta=Magenta Squid Pattern
+item.banner.additionalbanners_squid.orange=Orange Squid Pattern
+item.banner.additionalbanners_squid.white=White Squid Pattern
+
+#planks localization
+item.banner.additionalbanners_planks.black=Black Planks Pattern
+item.banner.additionalbanners_planks.red=Red Planks Pattern
+item.banner.additionalbanners_planks.green=Green Planks Pattern
+item.banner.additionalbanners_planks.brown=Brown Planks Pattern
+item.banner.additionalbanners_planks.blue=Blue Planks Pattern
+item.banner.additionalbanners_planks.purple=Purple Planks Pattern
+item.banner.additionalbanners_planks.cyan=Cyan Planks Pattern
+item.banner.additionalbanners_planks.silver=Silver Planks Pattern
+item.banner.additionalbanners_planks.gray=Gray Planks Pattern
+item.banner.additionalbanners_planks.pink=Pink Planks Pattern
+item.banner.additionalbanners_planks.lime=Lime Planks Pattern
+item.banner.additionalbanners_planks.yellow=Yellow Planks Pattern
+item.banner.additionalbanners_planks.lightBlue=LightBlue Planks Pattern
+item.banner.additionalbanners_planks.magenta=Magenta Planks Pattern
+item.banner.additionalbanners_planks.orange=Orange Planks Pattern
+item.banner.additionalbanners_planks.white=White Planks Pattern
+
+#hashtag localization
+item.banner.additionalbanners_hashtag.black=Black Hashtag Pattern
+item.banner.additionalbanners_hashtag.red=Red Hashtag Pattern
+item.banner.additionalbanners_hashtag.green=Green Hashtag Pattern
+item.banner.additionalbanners_hashtag.brown=Brown Hashtag Pattern
+item.banner.additionalbanners_hashtag.blue=Blue Hashtag Pattern
+item.banner.additionalbanners_hashtag.purple=Purple Hashtag Pattern
+item.banner.additionalbanners_hashtag.cyan=Cyan Hashtag Pattern
+item.banner.additionalbanners_hashtag.silver=Silver Hashtag Pattern
+item.banner.additionalbanners_hashtag.gray=Gray Hashtag Pattern
+item.banner.additionalbanners_hashtag.pink=Pink Hashtag Pattern
+item.banner.additionalbanners_hashtag.lime=Lime Hashtag Pattern
+item.banner.additionalbanners_hashtag.yellow=Yellow Hashtag Pattern
+item.banner.additionalbanners_hashtag.lightBlue=LightBlue Hashtag Pattern
+item.banner.additionalbanners_hashtag.magenta=Magenta Hashtag Pattern
+item.banner.additionalbanners_hashtag.orange=Orange Hashtag Pattern
+item.banner.additionalbanners_hashtag.white=White Hashtag Pattern
+
+#cap localization
+item.banner.additionalbanners_cap.black=Black Cap Pattern
+item.banner.additionalbanners_cap.red=Red Cap Pattern
+item.banner.additionalbanners_cap.green=Green Cap Pattern
+item.banner.additionalbanners_cap.brown=Brown Cap Pattern
+item.banner.additionalbanners_cap.blue=Blue Cap Pattern
+item.banner.additionalbanners_cap.purple=Purple Cap Pattern
+item.banner.additionalbanners_cap.cyan=Cyan Cap Pattern
+item.banner.additionalbanners_cap.silver=Silver Cap Pattern
+item.banner.additionalbanners_cap.gray=Gray Cap Pattern
+item.banner.additionalbanners_cap.pink=Pink Cap Pattern
+item.banner.additionalbanners_cap.lime=Lime Cap Pattern
+item.banner.additionalbanners_cap.yellow=Yellow Cap Pattern
+item.banner.additionalbanners_cap.lightBlue=LightBlue Cap Pattern
+item.banner.additionalbanners_cap.magenta=Magenta Cap Pattern
+item.banner.additionalbanners_cap.orange=Orange Cap Pattern
+item.banner.additionalbanners_cap.white=White Cap Pattern
