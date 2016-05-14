@@ -140,13 +140,6 @@ public class BannerUtils {
         Z(new BannerLayer[] { new BannerLayer(EnumBannerPattern.STRIPE_TOP, EnumDyeColor.BLACK), new BannerLayer(EnumBannerPattern.STRIPE_BOTTOM, EnumDyeColor.BLACK), new BannerLayer(EnumBannerPattern.STRIPE_DOWNLEFT, EnumDyeColor.BLACK), new BannerLayer(EnumBannerPattern.BORDER, EnumDyeColor.WHITE) }),
         PERIOD(new BannerLayer[] { new BannerLayer(EnumBannerPattern.TRIANGLES_BOTTOM, EnumDyeColor.BLACK), new BannerLayer(EnumBannerPattern.STRIPE_LEFT, EnumDyeColor.WHITE), new BannerLayer(EnumBannerPattern.STRIPE_RIGHT, EnumDyeColor.WHITE), new BannerLayer(EnumBannerPattern.BORDER, EnumDyeColor.WHITE) }),
         EXCLAMATION(new BannerLayer[] { new BannerLayer(EnumBannerPattern.STRIPE_CENTER, EnumDyeColor.BLACK), new BannerLayer(EnumBannerPattern.STRIPE_BOTTOM, EnumDyeColor.WHITE), new BannerLayer(EnumBannerPattern.TRIANGLES_BOTTOM, EnumDyeColor.BLACK), new BannerLayer(EnumBannerPattern.STRIPE_LEFT, EnumDyeColor.WHITE), new BannerLayer(EnumBannerPattern.STRIPE_RIGHT, EnumDyeColor.WHITE), new BannerLayer(EnumBannerPattern.BORDER, EnumDyeColor.WHITE) }),
-        // QUESTION(new BannerLayer[] { new BannerLayer(EnumBannerPattern.HALF_HORIZONTAL,
-        // EnumDyeColor.WHITE), new BannerLayer(EnumBannerPattern.STRIPE_RIGHT,
-        // EnumDyeColor.BLACK), new BannerLayer(EnumBannerPattern.STRIPE_LEFT,
-        // EnumDyeColor.WHITE), new BannerLayer(EnumBannerPattern.SQUARE_BOTTOM_RIGHT,
-        // EnumDyeColor.WHITE), new BannerLayer(EnumBannerPattern.STRIPE_TOP,
-        // EnumDyeColor.BLACK), new BannerLayer(EnumBannerPattern.BORDER, EnumDyeColor.WHITE)
-        // }),
         ADD(new BannerLayer[] { new BannerLayer(EnumBannerPattern.STRAIGHT_CROSS, EnumDyeColor.BLACK), new BannerLayer(EnumBannerPattern.STRIPE_BOTTOM, EnumDyeColor.WHITE), new BannerLayer(EnumBannerPattern.STRIPE_TOP, EnumDyeColor.WHITE), new BannerLayer(EnumBannerPattern.BORDER, EnumDyeColor.WHITE) }),
         MINUS(new BannerLayer[] { new BannerLayer(EnumBannerPattern.STRIPE_MIDDLE, EnumDyeColor.BLACK), new BannerLayer(EnumBannerPattern.BORDER, EnumDyeColor.WHITE) }),
         MULTIPLY(new BannerLayer[] { new BannerLayer(EnumBannerPattern.CROSS, EnumDyeColor.BLACK), new BannerLayer(EnumBannerPattern.BORDER, EnumDyeColor.WHITE) }),
