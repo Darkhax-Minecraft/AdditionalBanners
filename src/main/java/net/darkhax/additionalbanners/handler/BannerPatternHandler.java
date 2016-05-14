@@ -51,6 +51,7 @@ public class BannerPatternHandler {
         addCraftingPattern("dragon", new ItemStack(Items.DRAGON_BREATH));
         addCraftingPattern("squid", new ItemStack(Items.PRISMARINE_SHARD));
         addCraftingPattern("planks", new ItemStack(Blocks.PLANKS));
+        addCraftingPattern("balance", new ItemStack(Items.MILK_BUCKET));
         
         HASHTAG = addBasicPattern("hashtag");
         CAP = addCraftingPattern("cap", new ItemStack(Item.getItemFromBlock(Blocks.STONE_SLAB)));
