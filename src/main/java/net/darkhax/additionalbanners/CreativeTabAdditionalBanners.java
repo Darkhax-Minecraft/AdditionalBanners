@@ -2,6 +2,8 @@ package net.darkhax.additionalbanners;
 
 import java.util.List;
 
+import com.mojang.realmsclient.gui.ChatFormatting;
+
 import net.darkhax.additionalbanners.lib.BannerUtils;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
@@ -41,7 +43,7 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
             for (final BannerUtils.TypeDesign design : BannerUtils.TypeDesign.values()) {
                 
                 final ItemStack stack = BannerUtils.createBanner(color, BannerUtils.createPatternList(color, design.getLayers()));
-                stack.setStackDisplayName("Letter: " + design.name().toLowerCase());
+                stack.setStackDisplayName(ChatFormatting.RESET + "Design: " + design.name().toLowerCase());
                 itemList.add(stack);
             }
     }
