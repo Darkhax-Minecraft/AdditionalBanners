@@ -16,6 +16,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class CreativeTabAdditionalBanners extends CreativeTabs {
     
     private static ItemStack DISPLAY = null;
+    private static List<ItemStack> CACHE = null;
     
     public CreativeTabAdditionalBanners() {
         
@@ -41,22 +42,26 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
         
         super.displayAllRelevantItems(itemList);
         
-        for (final EnumDyeColor color : EnumDyeColor.values())
-            for (final BannerUtils.TypeDesign design : BannerUtils.TypeDesign.values()) {
+        if (CACHE == null)
+            for (final EnumDyeColor color : EnumDyeColor.values())
+                for (final BannerUtils.TypeDesign design : BannerUtils.TypeDesign.values()) {
+                    
+                    System.out.println(color.name() + " - " + design.name());
+                    final ItemStack stack = BannerUtils.createBanner(color, BannerUtils.createPatternList(color, design.getLayers()));
+                    stack.setStackDisplayName(ChatFormatting.RESET + "Design: " + design.name().toLowerCase());
+                    CACHE.add(stack);
+                }
                 
-                System.out.println(color.name() + " - " + design.name());
-                final ItemStack stack = BannerUtils.createBanner(color, BannerUtils.createPatternList(color, design.getLayers()));
-                stack.setStackDisplayName(ChatFormatting.RESET + "Design: " + design.name().toLowerCase());
-                itemList.add(stack);
-            }
+        itemList.addAll(CACHE);
     }
     
+    @Override
     @SideOnly(Side.CLIENT)
-    public ItemStack getIconItemStack() {
+    public ItemStack getIconItemStack () {
         
-        if (DISPLAY == null) 
+        if (DISPLAY == null)
             DISPLAY = BannerUtils.createBanner(EnumDyeColor.WHITE, BannerUtils.createPatternList(BannerUtils.TypeDesign.ADD.getLayers()));
-        
+            
         return DISPLAY;
     }
 }
