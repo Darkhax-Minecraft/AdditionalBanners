@@ -53,7 +53,7 @@ public class BannerPatternHandler {
         addCraftingPattern("planks", new ItemStack(Blocks.PLANKS));
         addCraftingPattern("balance", new ItemStack(Items.MILK_BUCKET));
         
-        HASHTAG = addBasicPattern("hashtag");
+        HASHTAG = addCraftingPattern("hashtag", new ItemStack(Blocks.CRAFTING_TABLE));
         CAP = addCraftingPattern("cap", new ItemStack(Item.getItemFromBlock(Blocks.STONE_SLAB)));
     }
     
