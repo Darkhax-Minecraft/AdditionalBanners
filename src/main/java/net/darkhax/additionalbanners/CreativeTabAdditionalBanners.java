@@ -5,14 +5,12 @@ import java.util.List;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
 
-import net.darkhax.additionalbanners.lib.BannerUtils;
+import net.darkhax.additionalbanners.handler.PatternHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class CreativeTabAdditionalBanners extends CreativeTabs {
     
@@ -32,13 +30,21 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
     }
     
     @Override
+    public ItemStack getIconItemStack () {
+        
+        if (DISPLAY == null)
+            DISPLAY = PatternHandler.createBanner(EnumDyeColor.WHITE, PatternHandler.createPatternList(PatternHandler.TypeDesign.ADD.getLayers()));
+            
+        return DISPLAY;
+    }
+    
+    @Override
     public boolean hasSearchBar () {
         
         return true;
     }
     
     @Override
-    @SideOnly(Side.CLIENT)
     public void displayAllRelevantItems (List<ItemStack> itemList) {
         
         super.displayAllRelevantItems(itemList);
@@ -47,24 +53,14 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
             
             CACHE = new ArrayList<ItemStack>();
             for (final EnumDyeColor color : EnumDyeColor.values())
-                for (final BannerUtils.TypeDesign design : BannerUtils.TypeDesign.values()) {
+                for (final PatternHandler.TypeDesign design : PatternHandler.TypeDesign.values()) {
                     
-                    final ItemStack stack = BannerUtils.createBanner(color, BannerUtils.createPatternList(color, design.getLayers()));
+                    final ItemStack stack = PatternHandler.createBanner(color, PatternHandler.createPatternList(color, design.getLayers()));
                     stack.setStackDisplayName(ChatFormatting.RESET + "Design: " + design.name().toLowerCase());
                     CACHE.add(stack);
                 }
         }
         
         itemList.addAll(CACHE);
-    }
-    
-    @Override
-    @SideOnly(Side.CLIENT)
-    public ItemStack getIconItemStack () {
-        
-        if (DISPLAY == null)
-            DISPLAY = BannerUtils.createBanner(EnumDyeColor.WHITE, BannerUtils.createPatternList(BannerUtils.TypeDesign.ADD.getLayers()));
-            
-        return DISPLAY;
     }
 }

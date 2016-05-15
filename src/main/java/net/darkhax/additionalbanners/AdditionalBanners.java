@@ -1,7 +1,7 @@
 package net.darkhax.additionalbanners;
 
 import net.darkhax.additionalbanners.common.CommonProxy;
-import net.darkhax.additionalbanners.handler.BannerPatternHandler;
+import net.darkhax.additionalbanners.handler.PatternHandler;
 import net.darkhax.additionalbanners.lib.Constants;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
@@ -23,6 +23,6 @@ public class AdditionalBanners {
     @EventHandler
     public void preInit (FMLPreInitializationEvent pre) {
         
-        BannerPatternHandler.initCraftingBanners();
+        PatternHandler.initCraftingBanners();
     }
 }
