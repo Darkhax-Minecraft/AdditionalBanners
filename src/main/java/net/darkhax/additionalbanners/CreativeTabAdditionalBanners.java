@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
 
+import net.darkhax.additionalbanners.handler.DesignHandler;
 import net.darkhax.additionalbanners.handler.PatternHandler;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
@@ -33,7 +34,7 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
     public ItemStack getIconItemStack () {
         
         if (DISPLAY == null)
-            DISPLAY = PatternHandler.createBanner(EnumDyeColor.WHITE, PatternHandler.createPatternList(PatternHandler.TypeDesign.ADD.getLayers()));
+            DISPLAY = PatternHandler.createBanner(EnumDyeColor.WHITE, PatternHandler.createPatternList(DesignHandler.LanguageDesign.ADD.getLayers()));
             
         return DISPLAY;
     }
@@ -53,7 +54,7 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
             
             CACHE = new ArrayList<ItemStack>();
             for (final EnumDyeColor color : EnumDyeColor.values())
-                for (final PatternHandler.TypeDesign design : PatternHandler.TypeDesign.values()) {
+                for (final DesignHandler.LanguageDesign design : DesignHandler.LanguageDesign.values()) {
                     
                     final ItemStack stack = PatternHandler.createBanner(color, PatternHandler.createPatternList(color, design.getLayers()));
                     stack.setStackDisplayName(ChatFormatting.RESET + "Design: " + design.name().toLowerCase());
