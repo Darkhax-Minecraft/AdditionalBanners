@@ -1,5 +1,6 @@
 package net.darkhax.additionalbanners;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
@@ -42,16 +43,18 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
         
         super.displayAllRelevantItems(itemList);
         
-        if (CACHE == null)
+        if (CACHE == null) {
+            
+            CACHE = new ArrayList<ItemStack>();
             for (final EnumDyeColor color : EnumDyeColor.values())
                 for (final BannerUtils.TypeDesign design : BannerUtils.TypeDesign.values()) {
                     
-                    System.out.println(color.name() + " - " + design.name());
                     final ItemStack stack = BannerUtils.createBanner(color, BannerUtils.createPatternList(color, design.getLayers()));
                     stack.setStackDisplayName(ChatFormatting.RESET + "Design: " + design.name().toLowerCase());
                     CACHE.add(stack);
                 }
-                
+        }
+        
         itemList.addAll(CACHE);
     }
     
