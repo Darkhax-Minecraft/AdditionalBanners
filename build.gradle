@@ -197,6 +197,7 @@ curseforge {
 
         releaseType = 'alpha'
         changelog = getGitChangelog()
+        changelogType = 'markdown'
 
         addGameVersion "${version_minecraft}"
         
