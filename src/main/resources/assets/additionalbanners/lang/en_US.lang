@@ -1,5 +1,6 @@
 #Misc
 itemGroup.additionalbanners=Add. Banners
+gui.additionalbanners.jei.category.banners=Banners
 
 #bread localization
 item.banner.additionalbanners_bread.black=Black Bread Pattern
