@@ -9,20 +9,17 @@ import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.BlankRecipeCategory;
 import mezz.jei.util.Translator;
+import net.darkhax.additionalbanners.AdditionalBanners;
 import net.darkhax.additionalbanners.handler.PatternHandler;
 import net.darkhax.additionalbanners.handler.PatternHandler.BannerLayer;
-import net.darkhax.additionalbanners.lib.Constants;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBanner;
 import net.minecraft.client.renderer.BannerTextures;
 import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.tileentity.BannerPattern;
 import net.minecraft.tileentity.TileEntityBanner;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
 
 public class RecipeCategoryBanners extends BlankRecipeCategory<RecipeWrapperBanners> {
     
@@ -40,7 +37,7 @@ public class RecipeCategoryBanners extends BlankRecipeCategory<RecipeWrapperBann
     public RecipeCategoryBanners (IGuiHelper guiHelper) {
         
         background = guiHelper.createBlankDrawable(recipeWidth, recipeHeight);
-        ResourceLocation recipeBackgroundResource = new ResourceLocation(Constants.MOD_ID, "textures/gui/sprites.png");
+        ResourceLocation recipeBackgroundResource = new ResourceLocation(AdditionalBanners.MOD_ID, "textures/gui/sprites.png");
         icon = guiHelper.createDrawable(recipeBackgroundResource, 240, 0, 16, 16);
         localizedName = Translator.translateToLocal("gui.additionalbanners.jei.category.banners");
         slot = guiHelper.getSlotDrawable();
@@ -130,5 +127,11 @@ public class RecipeCategoryBanners extends BlankRecipeCategory<RecipeWrapperBann
     public EnumDyeColor next() {
         
         return (this.color == EnumDyeColor.BLACK) ? EnumDyeColor.WHITE : EnumDyeColor.byMetadata(this.color.getMetadata() + 1);
+    }
+
+    @Override
+    public String getModName () {
+        
+        return AdditionalBanners.MOD_NAME;
     }
 }

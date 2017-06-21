@@ -8,13 +8,13 @@ import mezz.jei.api.IGuiHelper;
 import mezz.jei.api.IJeiHelpers;
 import mezz.jei.api.IModRegistry;
 import mezz.jei.api.JEIPlugin;
-import net.darkhax.additionalbanners.lib.Constants;
+import net.darkhax.additionalbanners.AdditionalBanners;
 import net.minecraft.tileentity.BannerPattern;
 
 @JEIPlugin
 public class AdditionalBannersJEI extends BlankModPlugin {
     
-    public static final String JEI_ID = Constants.MOD_ID + ".banner";
+    public static final String JEI_ID = AdditionalBanners.MOD_ID + ".banner";
     
     @Override
     public void register (IModRegistry registry) {

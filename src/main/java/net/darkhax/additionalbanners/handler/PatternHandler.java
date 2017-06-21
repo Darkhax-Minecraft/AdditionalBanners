@@ -1,6 +1,6 @@
 package net.darkhax.additionalbanners.handler;
 
-import net.darkhax.additionalbanners.lib.Constants;
+import net.darkhax.additionalbanners.AdditionalBanners;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumDyeColor;
@@ -77,7 +77,7 @@ public class PatternHandler {
     public static BannerPattern addBasicPattern (String name) {
 
         final Class<?>[] paramTypes = { String.class, String.class };
-        final Object[] paramValues = { Constants.MOD_ID + "_" + name, Constants.MOD_ID + "." + name };
+        final Object[] paramValues = { AdditionalBanners.MOD_ID + "_" + name, AdditionalBanners.MOD_ID + "." + name };
         return EnumHelper.addEnum(BannerPattern.class, name.toUpperCase(), paramTypes, paramValues);
     }
 
@@ -100,7 +100,7 @@ public class PatternHandler {
     public static BannerPattern addCraftingPattern (String name, ItemStack craftingStack) {
 
         final Class<?>[] paramTypes = { String.class, String.class, ItemStack.class };
-        final Object[] paramValues = { Constants.MOD_ID + "_" + name, Constants.MOD_ID + "." + name, craftingStack };
+        final Object[] paramValues = { AdditionalBanners.MOD_ID + "_" + name, AdditionalBanners.MOD_ID + "." + name, craftingStack };
         return EnumHelper.addEnum(BannerPattern.class, name.toUpperCase(), paramTypes, paramValues);
     }
 

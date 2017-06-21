@@ -2,10 +2,8 @@ package net.darkhax.additionalbanners.jei;
 
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.BlankRecipeWrapper;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.BannerPattern;
-import net.minecraftforge.oredict.OreDictionary;
 
 public  class RecipeWrapperBanners  extends BlankRecipeWrapper {
     

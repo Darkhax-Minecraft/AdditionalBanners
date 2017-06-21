@@ -45,7 +45,7 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
 
         return true;
     }
-
+    
     @Override
     public void displayAllRelevantItems (NonNullList<ItemStack> itemList) {
 
