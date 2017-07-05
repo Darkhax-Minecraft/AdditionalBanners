@@ -11,7 +11,6 @@ public  class RecipeWrapperBanners  extends BlankRecipeWrapper {
     
     public RecipeWrapperBanners(BannerPattern pattern) {
         
-        System.out.println("Added banner pattern: " + pattern.getFileName());
         this.pattern = pattern;
     }
     
