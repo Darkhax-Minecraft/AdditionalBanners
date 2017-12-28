@@ -1,5 +1,6 @@
 #Misc
 itemGroup.additionalbanners=更多旗幟圖示
+gui.additionalbanners.jei.category.banners=旗幟
 
 #bread localization
 item.banner.additionalbanners_bread.black=黑色麵包圖示
