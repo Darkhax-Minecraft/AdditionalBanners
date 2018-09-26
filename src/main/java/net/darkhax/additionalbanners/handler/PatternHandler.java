@@ -56,6 +56,7 @@ public class PatternHandler {
         addCraftingPattern("squid", new ItemStack(Items.PRISMARINE_SHARD));
         addCraftingPattern("planks", new ItemStack(Blocks.PLANKS));
         addCraftingPattern("balance", new ItemStack(Items.MILK_BUCKET));
+        addCraftingPattern("mushred", new ItemStack(Blocks.RED_MUSHROOM));
 
         HASHTAG = addCraftingPattern("hashtag", new ItemStack(Blocks.CRAFTING_TABLE));
         CAP = addCraftingPattern("cap", new ItemStack(Item.getItemFromBlock(Blocks.STONE_SLAB)));
