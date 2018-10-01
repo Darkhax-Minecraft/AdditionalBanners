@@ -26,13 +26,13 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
     }
 
     @Override
-    public ItemStack getTabIconItem () {
+    public ItemStack getIcon () {
 
-        return this.getIconItemStack();
+        return this.createIcon();
     }
 
     @Override
-    public ItemStack getIconItemStack () {
+    public ItemStack createIcon () {
 
         if (DISPLAY == null)
             DISPLAY = PatternHandler.createBanner(EnumDyeColor.WHITE, PatternHandler.createPatternList(DesignHandler.LanguageDesign.ADD.getLayers()));
@@ -55,7 +55,7 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
             itemList.add(PatternHandler.createBanner(EnumDyeColor.WHITE, PatternHandler.createPatternList(EnumDyeColor.BLACK, new BannerLayer(pattern, EnumDyeColor.BLACK))));
         if (CACHE == null) {
 
-            CACHE = new ArrayList<ItemStack>();
+            CACHE = new ArrayList<>();
             for (final EnumDyeColor color : EnumDyeColor.values())
                 for (final DesignHandler.LanguageDesign design : DesignHandler.LanguageDesign.values()) {
 
