@@ -100,18 +100,11 @@ curseforge {
 
     apiKey = System.getenv('curse_auth') ? System.getenv('curse_auth') : 0 
     def versions = "${curse_versions}".split(', ')
-	def changelogText = ''
     project {
 
         id = "${curse_project}"
         releaseType = 'alpha'
-        changelogText = getGitChangelog()
-        changelogText += "\n"
-        changelogText += "\n"
-        changelogText += "Huge thanks to my supporters on Patreon"
-		changelogText += "\n"
-        changelogText += getPledgeLog()
-		changelog = changelogText
+        changelog = getGitChangelog() + '\n\nHuge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax)\n\n' + getPledgeLog()
         changelogType = 'markdown'
 
         versions.each {
