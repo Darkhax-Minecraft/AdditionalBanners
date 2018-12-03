@@ -18,7 +18,7 @@ buildscript {
     dependencies {
     
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
-        classpath 'gradle.plugin.com.matthewprenger:CurseGradle:1.1.0'
+        classpath 'gradle.plugin.com.matthewprenger:CurseGradle:1.0.9'
     }
 }
 
@@ -76,7 +76,7 @@ repositories {
 
 dependencies {
 
-    deobfCompile "mezz.jei:jei_1.12.2:${version_jei}"
+    deobfCompile "mezz.jei:jei_1.12.1:${version_jei}"
 }
 
 String getBuildNumber() {
@@ -106,7 +106,7 @@ curseforge {
 
         id = "${curse_project}"
         releaseType = 'alpha'
-        changelog = getGitChangelog + lineSep + lineSep + 'Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax)' + getPledgeLog()
+        changelog = getGitChangelog + lineSep + lineSep + "Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax)" + getPledgeLog()
         changelogType = 'markdown'
 
         versions.each {
