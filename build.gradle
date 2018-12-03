@@ -106,7 +106,8 @@ curseforge {
         id = "${curse_project}"
         releaseType = 'alpha'
         changelogText = getGitChangelog
-        changelogText += "\n" + "\n"
+        changelogText += "\n"
+        changelogText += "\n"
         changelogText += "Huge thanks to my supporters on Patreon"
 		changelogText += "\n"
         changelogText += getPledgeLog()
