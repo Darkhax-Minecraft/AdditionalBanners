@@ -106,7 +106,10 @@ curseforge {
 
         id = "${curse_project}"
         releaseType = 'alpha'
-        changelog = getGitChangelog + lineSep + lineSep + "Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax)" + getPledgeLog()
+        changelog = getGitChangelog
+        changelog += lineSep + lineSep
+        changelog += "Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax)" 
+        changelog += lineSep + getPledgeLog()
         changelogType = 'markdown'
 
         versions.each {
