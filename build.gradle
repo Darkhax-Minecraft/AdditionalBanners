@@ -107,7 +107,7 @@ curseforge {
         releaseType = 'alpha'
         changelogText = getGitChangelog
         changelogText += "\n" + "\n"
-        changelogText += "Huge thanks to my supporters on \\[Patreon\\](https://www.patreon.com/Darkhax)"
+        changelogText += "Huge thanks to my supporters on Patreon"
 		changelogText += "\n"
         changelogText += getPledgeLog()
 		changelog = changelogText
