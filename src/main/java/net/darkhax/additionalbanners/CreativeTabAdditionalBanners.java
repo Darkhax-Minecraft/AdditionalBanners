@@ -1,23 +1,19 @@
 package net.darkhax.additionalbanners;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import com.mojang.realmsclient.gui.ChatFormatting;
-
-import net.darkhax.additionalbanners.handler.DesignHandler;
 import net.darkhax.additionalbanners.handler.PatternHandler;
-import net.darkhax.additionalbanners.handler.PatternHandler.BannerLayer;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.EnumDyeColor;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemBanner;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.BannerPattern;
 import net.minecraft.util.NonNullList;
 
-public class CreativeTabAdditionalBanners extends CreativeTabs {
+public class CreativeTabAdditionalBanners extends ItemGroup {
 
-    private static ItemStack DISPLAY = null;
-    private static List<ItemStack> CACHE = null;
+    private ItemStack display = null;
+    private List<ItemStack> cache = null;
 
     public CreativeTabAdditionalBanners () {
 
@@ -28,16 +24,13 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
     @Override
     public ItemStack getIcon () {
 
-        return this.createIcon();
+        return new ItemStack(Items.STICK);
     }
 
     @Override
     public ItemStack createIcon () {
 
-        if (DISPLAY == null)
-            DISPLAY = PatternHandler.createBanner(EnumDyeColor.WHITE, PatternHandler.createPatternList(DesignHandler.LanguageDesign.ADD.getLayers()));
-
-        return DISPLAY;
+        return display;
     }
 
     @Override
@@ -47,24 +40,30 @@ public class CreativeTabAdditionalBanners extends CreativeTabs {
     }
     
     @Override
-    public void displayAllRelevantItems (NonNullList<ItemStack> itemList) {
+    public void fill (NonNullList<ItemStack> itemList) {
 
-        super.displayAllRelevantItems(itemList);
+        super.fill(itemList);
+        
+        ItemBanner itemBanner = null;
+        
 
-        for (final BannerPattern pattern : BannerPattern.values())
-            itemList.add(PatternHandler.createBanner(EnumDyeColor.WHITE, PatternHandler.createPatternList(EnumDyeColor.BLACK, new BannerLayer(pattern, EnumDyeColor.BLACK))));
-        if (CACHE == null) {
-
-            CACHE = new ArrayList<>();
-            for (final EnumDyeColor color : EnumDyeColor.values())
-                for (final DesignHandler.LanguageDesign design : DesignHandler.LanguageDesign.values()) {
-
-                    final ItemStack stack = PatternHandler.createBanner(color, PatternHandler.createPatternList(color, design.getLayers()));
-                    stack.setStackDisplayName(ChatFormatting.RESET + "Design: " + design.name().toLowerCase());
-                    CACHE.add(stack);
-                }
+        for (final BannerPattern pattern : BannerPattern.values()) {
+        	
+            itemList.add(PatternHandler.createBanner(Items.WHITE_BANNER, pattern));
         }
-
-        itemList.addAll(CACHE);
+//        
+//        if (cache == null) {
+//
+//            cache = new ArrayList<>();
+//            for (final EnumDyeColor color : EnumDyeColor.values())
+//                for (final DesignHandler.LanguageDesign design : DesignHandler.LanguageDesign.values()) {
+//
+//                    final ItemStack stack = PatternHandler.createBanner(color, PatternHandler.createPatternList(color, design.getLayers()));
+//                    stack.setDisplayName(new TextComponentString("Design: " + design.name().toLowerCase()));
+//                    cache.add(stack);
+//                }
+//        }
+//
+//        itemList.addAll(cache);
     }
 }

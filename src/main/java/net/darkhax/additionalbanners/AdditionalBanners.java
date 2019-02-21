@@ -4,30 +4,29 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import net.darkhax.additionalbanners.handler.PatternHandler;
-import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraftforge.event.RegistryEvent.Register;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.event.FMLFingerprintViolationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod(modid = AdditionalBanners.MOD_ID, name = AdditionalBanners.MOD_NAME, version = "@VERSION@", certificateFingerprint = "@FINGERPRINT@")
+@Mod(value = AdditionalBanners.MOD_ID)
 public class AdditionalBanners {
 
     public static final String MOD_ID = "additionalbanners";
     public static final String MOD_NAME = "Additional Banners";
-    public static final CreativeTabs TAB_ADDITONAL_BANNERS = new CreativeTabAdditionalBanners();
+    public static final ItemGroup TAB_ADDITONAL_BANNERS = new CreativeTabAdditionalBanners();
 
     private static final Logger LOG = LogManager.getLogger(MOD_NAME);
     
-    @EventHandler
-    public void preInit (FMLPreInitializationEvent pre) {
-
-        PatternHandler.initCraftingBanners();
+    public AdditionalBanners() {
+    	
+    	FMLJavaModLoadingContext.get().getModEventBus().addGenericListener(Item.class, EventPriority.LOWEST, this::onItemsRegistered);
     }
-    
-    @EventHandler
-    public void onFingerprintViolation (FMLFingerprintViolationEvent event) {
 
-        LOG.error("Invalid fingerprint detected! The file " + event.getSource().getName() + " may have been tampered with. This version will NOT be supported by the author!");
+    public void onItemsRegistered(Register<Item> event) {
+    	
+    	PatternHandler.initCraftingBanners();
     }
 }
