@@ -1,5 +1,8 @@
 package net.darkhax.additionalbanners.handler;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import net.darkhax.additionalbanners.AdditionalBanners;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -10,6 +13,8 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.BannerPattern;
 
 public class PatternHandler {
+
+    private static List<BannerPattern> patterns = new ArrayList<>();
 
     /**
      * Initializes all of the new banner patterns added by the mod.
@@ -55,37 +60,44 @@ public class PatternHandler {
         addCraftingPattern("phantom", new ItemStack(Items.PHANTOM_MEMBRANE));
         addCraftingPattern("trident", new ItemStack(Items.TRIDENT));
         addCraftingPattern("anchor", new ItemStack(Items.OAK_BOAT));
-        
+
         addCraftingPattern("ingot", new ItemStack(Items.GOLD_INGOT));
         addCraftingPattern("gem", new ItemStack(Items.EMERALD));
         addCraftingPattern("dust", new ItemStack(Items.REDSTONE));
         addCraftingPattern("flint_and_steel", new ItemStack(Items.FLINT_AND_STEEL));
         addCraftingPattern("kelp", new ItemStack(Blocks.KELP));
     }
-    
+
     public static BannerPattern addCraftingPattern (String name, ItemStack craftingStack) {
 
-    	return BannerPattern.create(name.toUpperCase(), AdditionalBanners.MOD_ID + "_" + name, AdditionalBanners.MOD_ID  + "_" + name, craftingStack);
+        final BannerPattern pattern = BannerPattern.create(name.toUpperCase(), AdditionalBanners.MOD_ID + "_" + name, AdditionalBanners.MOD_ID + "_" + name, craftingStack);
+        patterns.add(pattern);
+        return pattern;
     }
-    
-    public static ItemStack createBanner(Item base, BannerPattern... patterns) {
-    	
-    	final ItemStack stack = new ItemStack(base);
-    	
-    	NBTTagCompound blockEntityTag = stack.getOrCreateChildTag("BlockEntityTag");
-    	
-    	NBTTagList list = new NBTTagList();
-    	
-    	for (BannerPattern pattern : patterns) {
-    		
-    		NBTTagCompound patternTag = new NBTTagCompound();
-    		patternTag.setString("Pattern", pattern.getHashname());
-    		patternTag.setInt("Color", 15);
-    		list.add(patternTag);
-    	}
-    	
-    	blockEntityTag.setTag("Patterns", list);
-    	
-    	return stack;
+
+    public static List<BannerPattern> getModdedPatterns () {
+
+        return patterns;
+    }
+
+    public static ItemStack createBanner (Item base, BannerPattern... patterns) {
+
+        final ItemStack stack = new ItemStack(base);
+
+        final NBTTagCompound blockEntityTag = stack.getOrCreateChildTag("BlockEntityTag");
+
+        final NBTTagList list = new NBTTagList();
+
+        for (final BannerPattern pattern : patterns) {
+
+            final NBTTagCompound patternTag = new NBTTagCompound();
+            patternTag.setString("Pattern", pattern.getHashname());
+            patternTag.setInt("Color", 15);
+            list.add(patternTag);
+        }
+
+        blockEntityTag.setTag("Patterns", list);
+
+        return stack;
     }
 }
