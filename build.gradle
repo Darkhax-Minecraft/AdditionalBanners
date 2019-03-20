@@ -86,8 +86,24 @@ processResources {
 
     from(sourceSets.main.resources.srcDirs) {
         include 'META-INF/mods.toml'
-
-        expand 'version': project.version, 'mod_id' : mod_id, 'mod_name': mod_name, 'mod_download': mod_download, 'mod_credits': mod_credits, 'mod_authors': mod_authors, 'mod_description': mod_description
+        
+        def credits = "Thanks to my supporters on Patreon. "
+        
+        def patreonSupporters = new ArrayList<String>()
+        
+        for (entry in getPledges()) {
+          
+            def pledge = entry.getValue();
+            
+            if (pledge.isValid()) {
+            
+                patreonSupporters.add(pledge.getDisplayName())
+            }
+        }
+        
+        credits += patreonSupporters.join(', ')
+        println credits
+        expand 'version': project.version, 'mod_id' : mod_id, 'mod_name': mod_name, 'mod_download': mod_download, 'mod_credits': credits, 'mod_authors': mod_authors, 'mod_description': mod_description
     }
 
     from(sourceSets.main.resources.srcDirs) {

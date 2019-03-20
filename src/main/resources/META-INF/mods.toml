@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[25,)"
-issueTrackerURL="https://www.google.com"
+issueTrackerURL="https://github.com/Darkhax-Minecraft/AdditionalBanners/issues"
 
 [[mods]]
 modId="additionalbanners"
