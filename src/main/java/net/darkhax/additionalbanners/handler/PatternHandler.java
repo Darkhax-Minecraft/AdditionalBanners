@@ -91,12 +91,12 @@ public class PatternHandler {
         for (final BannerPattern pattern : patterns) {
 
             final NBTTagCompound patternTag = new NBTTagCompound();
-            patternTag.setString("Pattern", pattern.getHashname());
-            patternTag.setInt("Color", 15);
+            patternTag.putString("Pattern", pattern.getHashname());
+            patternTag.putInt("Color", 15);
             list.add(patternTag);
         }
 
-        blockEntityTag.setTag("Patterns", list);
+        blockEntityTag.put("Patterns", list);
 
         return stack;
     }
