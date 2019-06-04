@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.darkhax.additionalbanners.AdditionalBanners;
+import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -66,6 +67,13 @@ public class PatternHandler {
         addCraftingPattern("dust", new ItemStack(Items.REDSTONE));
         addCraftingPattern("flint_and_steel", new ItemStack(Items.FLINT_AND_STEEL));
         addCraftingPattern("kelp", new ItemStack(Blocks.KELP));
+        
+        addCraftingPattern("snowflake", new ItemStack(Items.SNOWBALL));
+        addCraftingPattern("diamond", new ItemStack(Items.DIAMOND));
+        addCraftingPattern("clubs", new ItemStack(Blocks.DEAD_BUSH));
+        addCraftingPattern("heart", new ItemStack(Items.GLISTERING_MELON_SLICE));
+        addCraftingPattern("spade", new ItemStack(Items.IRON_SHOVEL));
+        addCraftingPattern("feather", new ItemStack(Items.FEATHER));
     }
 
     public static BannerPattern addCraftingPattern (String name, ItemStack craftingStack) {
