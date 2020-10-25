@@ -1,9 +1,11 @@
 modLoader="javafml"
-loaderVersion="[25,)"
+loaderVersion="[34,)"
 issueTrackerURL="https://github.com/Darkhax-Minecraft/AdditionalBanners/issues"
+license="LGPL v2.1"
 
 [[mods]]
 modId="additionalbanners"
+updateJSONURL="https://updates.blamejared.com/get?n=additionalbanners&gv=1.16.3"
 version="${version}"
 displayName="${mod_name}"
 displayURL="${mod_download}"
@@ -16,13 +18,20 @@ ${mod_description}
 [[dependencies.additionalbanners]]
     modId="forge"
     mandatory=true
-    versionRange="[25,)"
+    versionRange="[34,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.additionalbanners]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.13.2]"
+    versionRange="[1.16.3]"
+    ordering="NONE"
+    side="BOTH"
+	
+[[dependencies.additionalbanners]]
+    modId="bookshelf"
+    mandatory=true
+    versionRange="[8.7.20,)"
     ordering="NONE"
     side="BOTH"

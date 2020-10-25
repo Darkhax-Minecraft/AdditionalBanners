@@ -9,11 +9,12 @@ out/
 build/
 .gradle/
 run/
+/libs
 
 #Eclipse
 .classpath
 .metadata/
 .project
 .settings/
-/bin/
 *.launch
+/bin/
