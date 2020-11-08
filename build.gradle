@@ -80,25 +80,13 @@ repositories {
         name = 'MMD Maven (Bookshelf)'
         url 'http://maven.mcmoddev.com'
     }
-
-    maven {
-        name = 'Progwml6 maven (JEI)'
-        url = 'https://dvs1.progwml6.com/files/maven/'
-	}
-
-    maven {
-        name = 'Jared`s Maven (CRT)'
-        url 'https://maven.blamejared.com'
-	}
 }
 
 dependencies {
 
     minecraft "net.minecraftforge:forge:${forge_version}"
     
-    compile fg.deobf("net.darkhax.bookshelf:Bookshelf-1.16.3:${bookshelf_version}")
-    compile fg.deobf("mezz.jei:jei-1.16.2:${jei_version}")
-    compile fg.deobf("com.blamejared.crafttweaker:CraftTweaker-1.16.2:${crafttweaker_version}")
+    compile fg.deobf("net.darkhax.bookshelf:Bookshelf-1.16.4:${bookshelf_version}")
 }
 
 jar {
