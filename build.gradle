@@ -20,7 +20,7 @@ apply plugin: 'eclipse'
 apply from: 'https://raw.githubusercontent.com/MinecraftModDevelopment/Gradle-Collection/master/generic/secrets.gradle'
 apply from: 'https://raw.githubusercontent.com/MinecraftModDevelopment/Gradle-Collection/master/generic/markdown-git-changelog.gradle'
 apply from: 'https://raw.githubusercontent.com/MinecraftModDevelopment/Gradle-Collection/master/minecraft/artifacts.gradle'
-apply from: 'https://raw.githubusercontent.com/MinecraftModDevelopment/Gradle-Collection/master/minecraft/maven_nomcp.gradle'
+apply from: 'https://raw.githubusercontent.com/MinecraftModDevelopment/Gradle-Collection/master/minecraft/maven_local_nomcp.gradle'
 apply from: 'https://raw.githubusercontent.com/MinecraftModDevelopment/Gradle-Collection/master/generic/patreon.gradle'
 
 import groovy.json.JsonSlurper
@@ -77,15 +77,13 @@ minecraft {
 repositories {
 
     maven {
-        name = 'MMD Maven (Bookshelf)'
-        url 'http://maven.mcmoddev.com'
+        url 'https://maven.blamejared.com/'
     }
 }
 
 dependencies {
 
-    minecraft "net.minecraftforge:forge:${forge_version}"
-    
+    minecraft "net.minecraftforge:forge:${forge_version}"   
     compile fg.deobf("net.darkhax.bookshelf:Bookshelf-1.16.4:${bookshelf_version}")
 }
 
