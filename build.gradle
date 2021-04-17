@@ -52,21 +52,26 @@ minecraft {
         client {
 		
             workingDirectory project.file('run')
-			taskName "${mod_name} Client"
-
+			taskName "${mod_name}".replaceAll("\\s","") + 'Client'
+            property 'forge.logging.console.level', 'debug'
+            property 'terminal.ansi', 'true' 
+            
             mods {
-                cauldronrecipes {
+                additionalbanners {
                     source sourceSets.main
                 }
             }
         }
 
         server {
+        
             workingDirectory project.file('run')
-			taskName "${mod_name} Server"
-			
+			taskName "${mod_name}".replaceAll("\\s","") + 'Server'
+            property 'forge.logging.console.level', 'debug'
+            property 'terminal.ansi', 'true' 
+            
             mods {
-                cauldronrecipes {
+                additionalbanners {
                     source sourceSets.main
                 }
             }
