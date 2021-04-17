@@ -45,6 +45,8 @@ public class AdditionalBanners {
     public final BannerPattern heart;
     public final BannerPattern spades;
     public final BannerPattern moon;
+    public final BannerPattern frame;
+    public final BannerPattern squares;
     
     public AdditionalBanners() {
         
@@ -68,12 +70,14 @@ public class AdditionalBanners {
         this.dragon = this.registry.banners.registerItemPattern("dragon", Rarity.RARE);
         this.phantom = this.registry.banners.registerItemPattern("phantom", Rarity.RARE);
         this.trident = this.registry.banners.registerItemPattern("trident", Rarity.RARE);
+        this.frame = this.registry.banners.registerItemPattern("frame", Rarity.RARE);
         
         this.clubs = this.registry.banners.registerItemPattern("clubs", Rarity.EPIC);
         this.diamond = this.registry.banners.registerItemPattern("diamond", Rarity.EPIC);
         this.heart = this.registry.banners.registerItemPattern("heart", Rarity.EPIC);
         this.spades = this.registry.banners.registerItemPattern("spades", Rarity.EPIC);
         this.moon = this.registry.banners.registerItemPattern("moon", Rarity.EPIC);
+        this.squares = this.registry.banners.registerItemPattern("squares", Rarity.EPIC);
         
         final WanderingTraderConfig config = new WanderingTraderConfig(this.registry.banners);
         config.forceLoad();
