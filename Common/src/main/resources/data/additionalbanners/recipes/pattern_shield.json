@@ -1,0 +1,17 @@
+{
+  "type": "bookshelf:shapeless_durability",
+  "ingredients": [
+    {
+	  "tag": "bookshelf:shears"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+	{
+	  "item": "minecraft:shield"
+	}
+  ],
+  "result": {
+    "item": "additionalbanners:shield"
+  }
+}

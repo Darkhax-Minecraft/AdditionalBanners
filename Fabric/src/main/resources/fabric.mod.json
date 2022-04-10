@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contributors": [
+    "Special thanks to Chocohead for developing Fabric-ASM (Mozilla Public License Version 2.0).",
+    "Special thanks to PlanetTeamSpeakk for updating Fabric-ASM EnumExtender for Java16+.",
+    "This project is made possible with Patreon support from players like you. Thank you!",
+    "${mod_supporters}"
+  ],
+  "contact": {
+    "homepage": "${mod_homepage}",
+    "sources": "${mod_source}",
+    "issues": "${mod_issues}"
+  },
+  "license": "${mod_license}",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.darkhax.additionalbanners.AdditionalBannersFabric"
+    ],
+    "mm:early_risers": [
+      "net.darkhax.additionalbanners.AdditionalBannersEarlyRiser"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.13",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.twitter": "${mod_twitter}",
+        "modmenu.discord": "${mod_discord}",
+        "modmenu.curseforge": "${mod_homepage}",
+        "modmenu.patreon": "${patreon.campaignUrlTracked}"
+      }
+    }
+  }
+}
