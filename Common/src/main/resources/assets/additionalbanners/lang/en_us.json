@@ -381,7 +381,7 @@
   "block.minecraft.banner.additionalbanners_squares.red": "Red Squares",
   "block.minecraft.banner.additionalbanners_squares.black": "Black Squares",
 
-  "item.additionalbanners.hax": "Banner Pattern",
+  "item.additionalbanners.hex": "Banner Pattern",
   "item.additionalbanners.hex.desc": "Hexagon",
   "block.minecraft.banner.additionalbanners_hex.white": "White Hexagons",
   "block.minecraft.banner.additionalbanners_hex.orange": "Orange Hexagons",
