@@ -13,3 +13,10 @@ authors = "${mod_author}"
 description = '''
 ${mod_description}
 '''
+
+[[dependencies.${ mod_id }]]
+modId = "bookshelf"
+mandatory = true
+versionRange = "[13.0.11,14)"
+ordering = "NONE"
+side = "BOTH"
