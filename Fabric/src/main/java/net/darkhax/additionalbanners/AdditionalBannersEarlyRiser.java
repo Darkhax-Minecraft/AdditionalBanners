@@ -11,8 +11,8 @@ public class AdditionalBannersEarlyRiser implements Runnable {
     public void run() {
 
         final MappingResolver remapper = FabricLoader.getInstance().getMappingResolver();
-        final String instrument = remapper.mapClassName("intermediary", "net.minecraft.class_2582");
-        final EnumAdder adder = ClassTinkerers.enumBuilder(instrument, String.class, String.class, boolean.class);
+        final String bannerEnumClassName = remapper.mapClassName("intermediary", "net.minecraft.class_2582");
+        final EnumAdder adder = ClassTinkerers.enumBuilder(bannerEnumClassName, String.class, String.class, boolean.class);
 
         for (BannerPatterns.PatternData pattern : BannerPatterns.PATTERNS.values()) {
 
