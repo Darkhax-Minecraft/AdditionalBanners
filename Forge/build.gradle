@@ -75,7 +75,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     compileOnly project(":Common")
 
-    implementation fg.deobf("net.darkhax.bookshelf:Bookshelf-Forge-1.18.2:${project.ext.bookshelf_version}")
+    implementation fg.deobf("net.darkhax.bookshelf:Bookshelf-Forge-${project.ext.minecraft_version}:${project.ext.bookshelf_version}")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
