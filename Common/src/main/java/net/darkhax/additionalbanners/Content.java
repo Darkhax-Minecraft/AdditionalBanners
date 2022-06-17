@@ -8,6 +8,7 @@ import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.item.BannerPatternItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.entity.BannerPattern;
 
 public class Content extends RegistryDataProvider {
@@ -20,9 +21,10 @@ public class Content extends RegistryDataProvider {
 
         for (BannerPatterns.PatternData pattern : BannerPatterns.PATTERNS.values()) {
 
-            final IRegistryObject<BannerPatternItem> stencilItem = this.items.add(() -> new BannerPatternItem(BannerPattern.valueOf(pattern.enumName), new Item.Properties().rarity(pattern.rarity.get()).stacksTo(1)), pattern.name);
+            final Rarity rarity = Rarity.valueOf(pattern.rarity);
+            final IRegistryObject<BannerPatternItem> stencilItem = this.items.add(() -> new BannerPatternItem(BannerPattern.valueOf(pattern.enumName), new Item.Properties().rarity(rarity).stacksTo(1)), pattern.name);
 
-            switch (pattern.rarity.get()) {
+            switch (rarity) {
 
                 case COMMON -> this.trades.addCommonWanderingTrade(VillagerSells.create(stencilItem, 8, 8, 1, 0.5f));
                 case UNCOMMON -> this.trades.addCommonWanderingTrade(VillagerSells.create(stencilItem, 12, 8, 1, 0.5f));

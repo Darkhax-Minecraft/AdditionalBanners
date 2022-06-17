@@ -1,8 +1,5 @@
 package net.darkhax.additionalbanners;
 
-import net.darkhax.bookshelf.api.function.CachedSupplier;
-import net.minecraft.world.item.Rarity;
-
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -52,13 +49,13 @@ public class BannerPatterns {
     public static class PatternData {
 
         public final String name;
-        public final CachedSupplier<Rarity> rarity;
+        public final String rarity;
         public final String enumName;
         public final String texture;
 
         public PatternData(String name, String rarity) {
             this.name = name;
-            this.rarity = CachedSupplier.cache(() -> Rarity.valueOf(rarity));
+            this.rarity = rarity;
             this.texture = MOD_ID + "_" + this.name;
             this.enumName = this.texture.toUpperCase(Locale.ROOT);
         }
