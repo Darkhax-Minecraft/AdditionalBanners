@@ -28,7 +28,7 @@
     "fabric": "*",
     "minecraft": "1.19.x",
     "java": ">=17",
-    "bookshelf": ">=14.0.2"
+    "bookshelf": ">=15"
   },
   "custom": {
     "modmenu": {
