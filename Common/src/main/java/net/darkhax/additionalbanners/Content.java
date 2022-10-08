@@ -45,6 +45,8 @@ public final class Content extends RegistryDataProvider {
         createPattern("dragon", Rarity.RARE);
         createPattern("phantom", Rarity.RARE);
         createPattern("trident", Rarity.RARE);
+        createPattern("cobweb", Rarity.RARE);
+        createPattern("spider", Rarity.RARE);
 
         createPattern("clubs", Rarity.EPIC);
         createPattern("diamond", Rarity.EPIC);
