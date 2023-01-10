@@ -8,10 +8,7 @@ import net.darkhax.bookshelf.api.registry.RegistryDataProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.npc.VillagerProfession;
-import net.minecraft.world.item.BannerPatternItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.entity.BannerPattern;
 
 public final class Content extends RegistryDataProvider {
@@ -25,7 +22,7 @@ public final class Content extends RegistryDataProvider {
 
         super(Constants.MOD_ID);
 
-        this.withCreativeTab(() -> Items.CREEPER_BANNER_PATTERN);
+        this.withItemTab(() -> new ItemStack(Items.CREEPER_BANNER_PATTERN));
 
         createPattern("anchor", Rarity.COMMON);
         createPattern("balance", Rarity.COMMON);
