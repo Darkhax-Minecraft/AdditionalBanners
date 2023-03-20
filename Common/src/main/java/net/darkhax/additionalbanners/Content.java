@@ -31,6 +31,7 @@ public final class Content extends RegistryDataProvider {
         createPattern("mushroom", Rarity.COMMON);
         createPattern("pumpkin", Rarity.COMMON);
         createPattern("snowflake", Rarity.COMMON);
+        createPattern("steps", Rarity.COMMON);
 
         createPattern("squid", Rarity.UNCOMMON);
         createPattern("shield", Rarity.UNCOMMON);
@@ -38,6 +39,8 @@ public final class Content extends RegistryDataProvider {
         createPattern("frame", Rarity.UNCOMMON);
         createPattern("hex", Rarity.UNCOMMON);
         createPattern("waterfall", Rarity.UNCOMMON);
+        createPattern("starburst", Rarity.UNCOMMON);
+        createPattern("prismarine", Rarity.UNCOMMON);
 
         createPattern("dragon", Rarity.RARE);
         createPattern("phantom", Rarity.RARE);

@@ -1,0 +1,17 @@
+{
+  "type": "bookshelf:shapeless_durability",
+  "ingredients": [
+    {
+      "tag": "bookshelf:shears"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "tag": "minecraft:prismarine_shard"
+    }
+  ],
+  "result": {
+    "item": "additionalbanners:prismarine"
+  }
+}
