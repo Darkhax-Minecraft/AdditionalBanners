@@ -41,6 +41,7 @@ public final class Content extends RegistryDataProvider {
         createPattern("waterfall", Rarity.UNCOMMON);
         createPattern("starburst", Rarity.UNCOMMON);
         createPattern("prismarine", Rarity.UNCOMMON);
+        createPattern("scales", Rarity.UNCOMMON, "up", "down", "left", "right");
 
         createPattern("dragon", Rarity.RARE);
         createPattern("phantom", Rarity.RARE);
@@ -56,13 +57,29 @@ public final class Content extends RegistryDataProvider {
         createPattern("squares", Rarity.EPIC);
     }
 
+    private void createPattern(String name, Rarity rarity, String... variants) {
+
+        final TagKey<BannerPattern> bannerTag = Services.TAGS.bannerPatternTag(new ResourceLocation(Constants.MOD_ID, "pattern_item/" + name));
+        final IRegistryObject<BannerPatternItem> stencilItem = this.items.add(() -> new BannerPatternItem(bannerTag, new Item.Properties().stacksTo(1).rarity(rarity)), name);
+        addTradeEntries(stencilItem, rarity);
+
+        for (String variant : variants) {
+
+            final String subId = name + "_" + variant;
+            this.bannerPatterns.add(() -> new BannerPattern(subId), subId);
+        }
+    }
+
     private void createPattern(String name, Rarity rarity) {
 
         final TagKey<BannerPattern> bannerTag = Services.TAGS.bannerPatternTag(new ResourceLocation(Constants.MOD_ID, "pattern_item/" + name));
-        final IRegistryObject<BannerPattern> pattern = this.bannerPatterns.add(() -> new BannerPattern(name), name);
         final IRegistryObject<BannerPatternItem> stencilItem = this.items.add(() -> new BannerPatternItem(bannerTag, new Item.Properties().stacksTo(1).rarity(rarity)), name);
+        this.bannerPatterns.add(() -> new BannerPattern(name), name);
+        addTradeEntries(stencilItem, rarity);
+    }
 
-        // Register Trades
+    private void addTradeEntries(IRegistryObject<BannerPatternItem> stencilItem, Rarity rarity) {
+
         switch (rarity) {
 
             case COMMON -> this.trades.addCommonWanderingTrade(VillagerSells.create(stencilItem, 8, 8, 1, 0.5f));
