@@ -579,5 +579,24 @@
   "block.minecraft.banner.additionalbanners.scales_right.brown": "Brown Rightward Scales",
   "block.minecraft.banner.additionalbanners.scales_right.green": "Green Rightward Scales",
   "block.minecraft.banner.additionalbanners.scales_right.red": "Red Rightward Scales",
-  "block.minecraft.banner.additionalbanners.scales_right.black": "Black Rightward Scales"
+  "block.minecraft.banner.additionalbanners.scales_right.black": "Black Rightward Scales",
+
+  "item.additionalbanners.chain": "Banner Pattern",
+  "item.additionalbanners.chain.desc": "Chain",
+  "block.minecraft.banner.additionalbanners.chain.white": "White Chain",
+  "block.minecraft.banner.additionalbanners.chain.orange": "Orange Chain",
+  "block.minecraft.banner.additionalbanners.chain.magenta": "Magenta Chain",
+  "block.minecraft.banner.additionalbanners.chain.light_blue": "Light Blue Chain",
+  "block.minecraft.banner.additionalbanners.chain.yellow": "Yellow Chain",
+  "block.minecraft.banner.additionalbanners.chain.lime": "Lime Chain",
+  "block.minecraft.banner.additionalbanners.chain.pink": "Pink Chain",
+  "block.minecraft.banner.additionalbanners.chain.gray": "Gray Chain",
+  "block.minecraft.banner.additionalbanners.chain.light_gray": "Light Gray Chain",
+  "block.minecraft.banner.additionalbanners.chain.cyan": "Cyan Chain",
+  "block.minecraft.banner.additionalbanners.chain.purple": "Purple Chain",
+  "block.minecraft.banner.additionalbanners.chain.blue": "Blue Chain",
+  "block.minecraft.banner.additionalbanners.chain.brown": "Brown Chain",
+  "block.minecraft.banner.additionalbanners.chain.green": "Green Chain",
+  "block.minecraft.banner.additionalbanners.chain.red": "Red Chain",
+  "block.minecraft.banner.additionalbanners.chain.black": "Black Chain"
 }

@@ -42,6 +42,7 @@ public final class Content extends RegistryDataProvider {
         createPattern("starburst", Rarity.UNCOMMON);
         createPattern("prismarine", Rarity.UNCOMMON);
         createPattern("scales", Rarity.UNCOMMON, "up", "down", "left", "right");
+        createPattern("chain", Rarity.UNCOMMON);
 
         createPattern("dragon", Rarity.RARE);
         createPattern("phantom", Rarity.RARE);
