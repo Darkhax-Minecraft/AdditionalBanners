@@ -1,14 +1,17 @@
 package net.darkhax.additionalbanners;
 
+import net.darkhax.additionalbanners.config.TradeConfig;
 import net.darkhax.bookshelf.api.Services;
-import net.darkhax.bookshelf.api.entity.merchant.MerchantTier;
-import net.darkhax.bookshelf.api.entity.merchant.trade.VillagerSells;
 import net.darkhax.bookshelf.api.registry.IRegistryObject;
 import net.darkhax.bookshelf.api.registry.RegistryDataProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.npc.VillagerProfession;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.BannerPatternItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.entity.BannerPattern;
 
 public final class Content extends RegistryDataProvider {
@@ -62,7 +65,7 @@ public final class Content extends RegistryDataProvider {
 
         final TagKey<BannerPattern> bannerTag = Services.TAGS.bannerPatternTag(new ResourceLocation(Constants.MOD_ID, "pattern_item/" + name));
         final IRegistryObject<BannerPatternItem> stencilItem = this.items.add(() -> new BannerPatternItem(bannerTag, new Item.Properties().stacksTo(1).rarity(rarity)), name);
-        addTradeEntries(stencilItem, rarity);
+        addTradeEntries(name, stencilItem, rarity);
 
         for (String variant : variants) {
 
@@ -76,19 +79,33 @@ public final class Content extends RegistryDataProvider {
         final TagKey<BannerPattern> bannerTag = Services.TAGS.bannerPatternTag(new ResourceLocation(Constants.MOD_ID, "pattern_item/" + name));
         final IRegistryObject<BannerPatternItem> stencilItem = this.items.add(() -> new BannerPatternItem(bannerTag, new Item.Properties().stacksTo(1).rarity(rarity)), name);
         this.bannerPatterns.add(() -> new BannerPattern(name), name);
-        addTradeEntries(stencilItem, rarity);
+        addTradeEntries(name, stencilItem, rarity);
     }
 
-    private void addTradeEntries(IRegistryObject<BannerPatternItem> stencilItem, Rarity rarity) {
+    private void addTradeEntries(String name, IRegistryObject<BannerPatternItem> stencilItem, Rarity rarity) {
 
-        switch (rarity) {
+        final TradeConfig config = TradeConfig.load(name, rarity);
 
-            case COMMON -> this.trades.addCommonWanderingTrade(VillagerSells.create(stencilItem, 8, 8, 1, 0.5f));
-            case UNCOMMON -> this.trades.addCommonWanderingTrade(VillagerSells.create(stencilItem, 12, 8, 1, 0.5f));
-            case RARE -> this.trades.addRareWanderingTrade(VillagerSells.create(stencilItem, 16, 8, 1, 0.5f));
-            case EPIC -> {
-                this.trades.addTrade(VillagerProfession.SHEPHERD, MerchantTier.EXPERT, VillagerSells.create(stencilItem, 18, 8, 1, 0.5f));
-                this.trades.addRareWanderingTrade(VillagerSells.create(stencilItem, 24, 8, 1, 0.5f));
+        if (config != null) {
+
+            final TradeConfig.WanderingOffer wanderingOffer = config.getWanderingOffer();
+
+            if (wanderingOffer.isEnabled()) {
+
+                if (wanderingOffer.isRareTrade()) {
+                    this.trades.addRareWanderingTrade(wanderingOffer.createTrade(stencilItem));
+                }
+
+                else {
+                    this.trades.addCommonWanderingTrade(wanderingOffer.createTrade(stencilItem));
+                }
+            }
+
+            final TradeConfig.VillagerOffer shepherdOffer = config.getShepherdOffer();
+
+            if (shepherdOffer.isEnabled() && shepherdOffer.getTier() != null) {
+
+                this.trades.addTrade(VillagerProfession.SHEPHERD, shepherdOffer.getTier(), shepherdOffer.createTrade(stencilItem));
             }
         }
     }
