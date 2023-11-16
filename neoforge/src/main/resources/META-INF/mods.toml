@@ -1,16 +1,16 @@
 modLoader = "javafml"
-loaderVersion = "[48,)"
+loaderVersion = "${neoforge_version_range}"
 license = "${mod_license}"
-issueTrackerURL = "${mod_issues}"
-logoFile = "logo.png"
-logoBlur = false
+issueTrackerURL="${mod_issues}"
 
 [[mods]]
 modId = "${mod_id}"
-version = "${file.jarVersion}"
+version = "${version}"
 displayName = "${mod_name}"
+updateJSONURL = "https://updates.blamejared.com/get?n=${mod_id}&gv=${minecraft_version}&ml=neoforge"
 displayURL = "${mod_homepage}"
-updateJSONURL = "https://updates.blamejared.com/get?n=${mod_id}&gv=${minecraft_version}"
+logoFile = "logo.png"
+logoBlur = false
 credits = "This project is made possible with Patreon support from players like you. Thank you! ${mod_supporters}"
 authors = "${mod_author}"
 description = '''
@@ -18,9 +18,9 @@ ${mod_description}
 '''
 
 [[dependencies.${ mod_id }]]
-modId = "forge"
+modId = "neoforge"
 mandatory = true
-versionRange = "[48,)"
+versionRange = "${neoforge_version_range}"
 ordering = "NONE"
 side = "BOTH"
 
@@ -34,6 +34,6 @@ side = "BOTH"
 [[dependencies.${ mod_id }]]
 modId = "bookshelf"
 mandatory = true
-versionRange = "[21,)"
+versionRange = "[21.0.10,)"
 ordering = "NONE"
 side = "BOTH"

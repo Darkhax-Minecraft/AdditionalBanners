@@ -4,6 +4,7 @@ import net.darkhax.additionalbanners.config.TradeConfig;
 import net.darkhax.bookshelf.api.Services;
 import net.darkhax.bookshelf.api.registry.IRegistryObject;
 import net.darkhax.bookshelf.api.registry.RegistryDataProvider;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.npc.VillagerProfession;
@@ -63,7 +64,7 @@ public final class Content extends RegistryDataProvider {
 
     private void createPattern(String name, Rarity rarity, String... variants) {
 
-        final TagKey<BannerPattern> bannerTag = Services.TAGS.bannerPatternTag(new ResourceLocation(Constants.MOD_ID, "pattern_item/" + name));
+        final TagKey<BannerPattern> bannerTag = TagKey.create(Registries.BANNER_PATTERN, new ResourceLocation(Constants.MOD_ID, "pattern_item/" + name));
         final IRegistryObject<BannerPatternItem> stencilItem = this.items.add(() -> new BannerPatternItem(bannerTag, new Item.Properties().stacksTo(1).rarity(rarity)), name);
         addTradeEntries(name, stencilItem, rarity);
 
@@ -76,7 +77,7 @@ public final class Content extends RegistryDataProvider {
 
     private void createPattern(String name, Rarity rarity) {
 
-        final TagKey<BannerPattern> bannerTag = Services.TAGS.bannerPatternTag(new ResourceLocation(Constants.MOD_ID, "pattern_item/" + name));
+        final TagKey<BannerPattern> bannerTag = TagKey.create(Registries.BANNER_PATTERN, new ResourceLocation(Constants.MOD_ID, "pattern_item/" + name));
         final IRegistryObject<BannerPatternItem> stencilItem = this.items.add(() -> new BannerPatternItem(bannerTag, new Item.Properties().stacksTo(1).rarity(rarity)), name);
         this.bannerPatterns.add(() -> new BannerPattern(name), name);
         addTradeEntries(name, stencilItem, rarity);
