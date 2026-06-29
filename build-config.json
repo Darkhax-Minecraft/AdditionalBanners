@@ -1,0 +1,44 @@
+{
+  "mod": {
+    "name": "AdditionalBanners",
+    "group": "net.darkhax.additionalbanners",
+    "authors": [
+      "Darkhax"
+    ],
+    "id": "additionalbanners",
+    "license": "LGPL v2.1",
+    "description": "All the banner patterns you could ever need.",
+    "repo": "https://github.com/Darkhax-Minecraft/AdditionalBanners",
+    "client": false
+  },
+  "curseforge": {
+    "slug": "additional-banners",
+    "id": "230137"
+  },
+  "modrinth": {
+    "slug": "additional-banners",
+    "id": "AVPTFuxC"
+  },
+  "dependencies": [
+    {
+      "name": "Bookshelf",
+      "type": "required",
+      "mod_id": {
+        "id": "bookshelf"
+      },
+      "maven": {
+        "common": "net.darkhax.bookshelf:bookshelf-common-26.1.2:26.1.2.12",
+        "neoforge": "net.darkhax.bookshelf:bookshelf-neoforge-26.1.2:26.1.2.12",
+        "fabric": "net.darkhax.bookshelf:bookshelf-fabric-26.1.2:26.1.2.12"
+      },
+      "curseforge": {
+        "slug": "bookshelf",
+        "id": "228525"
+      },
+      "modrinth": {
+        "slug": "bookshelf-lib",
+        "id": "uy4Cnpcm"
+      }
+    }
+  ]
+}

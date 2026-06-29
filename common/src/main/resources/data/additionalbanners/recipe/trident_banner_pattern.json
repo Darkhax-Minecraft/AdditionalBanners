@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:paper",
+    "P": "minecraft:trident"
+  },
+  "pattern": [
+    " A ",
+    "APA",
+    " A "
+  ],
+  "result": {
+    "id": "additionalbanners:trident_banner_pattern"
+  }
+}

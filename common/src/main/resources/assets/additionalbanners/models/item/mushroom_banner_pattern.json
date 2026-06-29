@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "additionalbanners:item/mushroom_banner_pattern"
+  }
+}

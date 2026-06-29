@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": "minecraft:paper",
+    "A": "minecraft:red_mushroom"
+  },
+  "pattern": [
+    " A ",
+    "APA",
+    " A "
+  ],
+  "result": {
+    "id": "additionalbanners:mushroom_banner_pattern"
+  }
+}

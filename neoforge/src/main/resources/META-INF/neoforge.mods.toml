@@ -1,0 +1,43 @@
+modLoader = "javafml"
+license = "LGPL v2.1"
+issueTrackerURL = "https://github.com/Darkhax-Minecraft/AdditionalBanners/issues"
+
+[[mods]]
+modId = "additionalbanners"
+version = "26.1.2.0"
+displayName = "AdditionalBanners"
+updateJSONURL = "https://updates.blamejared.com/get?n=additionalbanners&gv=26.1.2&ml=neoforge"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/additional-banners"
+logoFile = "logo_additionalbanners.png"
+logoBlur = false
+credits = "This project is made possible with Patreon support from players like you. Thank you! lothrazar, techsquirrel, Keyana , Darkosto, Tobias Ward, noobanidus"
+authors = "Darkhax"
+description = "All the banner patterns you could ever need."
+
+[[mixins]]
+config = "additionalbanners.common.mixins.json"
+
+[[mixins]]
+config = "additionalbanners.neoforge.mixins.json"
+
+[[dependencies.additionalbanners]]
+modId = "minecraft"
+type = "required"
+versionRange = "26.1"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.additionalbanners]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.1.0.1-beta,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.additionalbanners]]
+modId = "bookshelf"
+type = "required"
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
+

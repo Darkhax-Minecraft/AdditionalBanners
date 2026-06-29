@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": "minecraft:paper",
+    "A": "minecraft:glowstone_dust",
+    "B": "minecraft:black_dye"
+  },
+  "pattern": [
+    " B ",
+    "APA",
+    " B "
+  ],
+  "result": {
+    "id": "additionalbanners:balance_banner_pattern"
+  }
+}

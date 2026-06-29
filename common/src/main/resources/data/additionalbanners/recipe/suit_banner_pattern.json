@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": "minecraft:paper",
+    "A": "minecraft:red_dye",
+    "B": "minecraft:black_dye"
+  },
+  "pattern": [
+    " A ",
+    "BPB",
+    " A "
+  ],
+  "result": {
+    "id": "additionalbanners:suit_banner_pattern"
+  }
+}

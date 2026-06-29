@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "additionalbanners:anchor_banner_pattern",
+    "additionalbanners:balance_banner_pattern",
+    "additionalbanners:grass_banner_pattern",
+    "additionalbanners:kelp_banner_pattern",
+    "additionalbanners:mushroom_banner_pattern",
+    "additionalbanners:pumpkin_banner_pattern",
+    "additionalbanners:snowflake_banner_pattern",
+    "additionalbanners:steps_banner_pattern",
+    "additionalbanners:squid_banner_pattern",
+    "additionalbanners:shield_banner_pattern",
+    "additionalbanners:sword_banner_pattern",
+    "additionalbanners:frame_banner_pattern",
+    "additionalbanners:hex_banner_pattern",
+    "additionalbanners:waterfall_banner_pattern",
+    "additionalbanners:starburst_banner_pattern",
+    "additionalbanners:prismarine_banner_pattern",
+    "additionalbanners:scales_banner_pattern",
+    "additionalbanners:chain_banner_pattern",
+    "additionalbanners:dragon_banner_pattern",
+    "additionalbanners:phantom_banner_pattern",
+    "additionalbanners:trident_banner_pattern",
+    "additionalbanners:spider_banner_pattern",
+    "additionalbanners:suit_banner_pattern",
+    "additionalbanners:moon_banner_pattern",
+    "additionalbanners:squares_banner_pattern"
+  ]
+}

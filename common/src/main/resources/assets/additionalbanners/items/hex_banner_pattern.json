@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "additionalbanners:item/hex_banner_pattern"
+  }
+}
