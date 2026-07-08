@@ -1,5 +1,5 @@
 <!-- name-start -->
-# AdditionalBanners [![CurseForge Project](https://img.shields.io/curseforge/dt/230137?logo=curseforge&label=CurseForge&style=flat-square&labelColor=2D2D2D&color=555555)](https://www.curseforge.com/minecraft/mc-mods/additional-banners) [![Modrinth Project](https://img.shields.io/modrinth/dt/AVPTFuxC?logo=modrinth&label=Modrinth&style=flat-square&labelColor=2D2D2D&color=555555)](https://modrinth.com/mod/additional-banners) [![Maven Project](https://img.shields.io/maven-metadata/v?style=flat-square&logoColor=D31A38&labelColor=2D2D2D&color=555555&label=Latest&logo=gradle&metadataUrl=https%3A%2F%2Fmaven.blamejared.com%2Fnet%2Fdarkhax%2Fadditionalbanners%2Fadditionalbanners-common-26.1.2%2Fmaven-metadata.xml)](https://maven.blamejared.com/net/darkhax/additionalbanners)
+# AdditionalBanners [![CurseForge Project](https://img.shields.io/curseforge/dt/230137?logo=curseforge&label=CurseForge&style=flat-square&labelColor=2D2D2D&color=555555)](https://www.curseforge.com/minecraft/mc-mods/additional-banners) [![Modrinth Project](https://img.shields.io/modrinth/dt/AVPTFuxC?logo=modrinth&label=Modrinth&style=flat-square&labelColor=2D2D2D&color=555555)](https://modrinth.com/mod/additional-banners) [![Maven Project](https://img.shields.io/maven-metadata/v?style=flat-square&logoColor=D31A38&labelColor=2D2D2D&color=555555&label=Latest&logo=gradle&metadataUrl=https%3A%2F%2Fmaven.blamejared.com%2Fnet%2Fdarkhax%2Fadditionalbanners%2Fadditionalbanners-common-26.2%2Fmaven-metadata.xml)](https://maven.blamejared.com/net/darkhax/additionalbanners)
 <!-- name-end -->
 
 <!-- description-start -->
@@ -22,11 +22,11 @@ repositories {
 
 dependencies {
      // NeoForge
-     implementation group: 'net.darkhax.additionalbanners', name: 'additionalbanners-neoforge-26.1.2', version: '26.1.2.0'
+     implementation group: 'net.darkhax.additionalbanners', name: 'additionalbanners-neoforge-26.2', version: '26.2.0.0'
      // Fabric
-     implementation group: 'net.darkhax.additionalbanners', name: 'additionalbanners-fabric-26.1.2', version: '26.1.2.0'
+     implementation group: 'net.darkhax.additionalbanners', name: 'additionalbanners-fabric-26.2', version: '26.2.0.0'
      // Common / MultiLoader / Vanilla / No Loader
-     implementation group: 'net.darkhax.additionalbanners', name: 'additionalbanners-common-26.1.2', version: '26.1.2.0'
+     implementation group: 'net.darkhax.additionalbanners', name: 'additionalbanners-common-26.2', version: '26.2.0.0'
 }
 ```
 
