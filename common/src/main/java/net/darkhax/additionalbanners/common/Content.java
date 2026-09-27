@@ -18,12 +18,6 @@ public final class Content implements ContentProvider {
     public void defineCreativeTabs(CreativeModeTabAdapter registry) {
         registry.add("tab", () -> PatternType.MOON.item.get().getDefaultInstance(), (params, builder) -> {
             for (PatternType type : PatternType.values()) {
-                if (type.hasVariants()) {
-
-                }
-                else {
-
-                }
                 builder.accept(type.item.get());
             }
         });

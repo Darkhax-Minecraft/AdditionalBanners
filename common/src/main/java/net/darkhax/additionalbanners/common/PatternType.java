@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.entity.BannerPattern;
 
 import java.util.function.Supplier;
 
-public enum PatternType {
+public enum  PatternType {
 
     ANCHOR("anchor", Rarity.COMMON),
     BALANCE("balance", Rarity.COMMON),
